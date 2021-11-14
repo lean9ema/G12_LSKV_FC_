@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    width: 100%;
+}
+
+.header-container {
+   width: 100%;
+   background-color: #F8E2CF;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+}
+
+.list-home {
+    list-style: none;
+    display: flex;
+}
+
+.list-home li{
+    padding: 25px;
+}
+
+.list-home li a {
+    text-decoration: none;
+}
+
+.login-home{
+    padding-top: 25px;
+}
+
+.login-home a{
+    text-decoration: none;
+    padding: 5px;
+}
