@@ -1,6 +1,67 @@
 *{
     box-sizing: border-box;
 }
+
+main .register{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .register .log-Red div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+main .register .log-Red div i{
+    margin: 0 10px;
+}
+
+main .register .log-Red div .facebook{
+    text-align: center;
+    color: #fff;
+    background-color: blue;
+    border-radius: 1px;
+}
+
+main .register .log-Red div .google{
+    text-align: center;
+    color:#fff;
+    background-color: red;
+    border-radius: 1px;
+}
+main .register .log-Red div .o{
+    text-align: center;
+}
+
+main .register .datos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+main .register .datos .box{
+    margin: 0 15px;
+}
+
+main .register .datos .box h6{
+    font-size: 12px;
+    margin: 2px;
+}
+
+main .register .datos .box p{
+    font-size: 8px;
+    text-align: left;
+    color: lightgray;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
 .footer-Top{
     display: flex;
     flex-wrap: wrap;
@@ -102,4 +163,13 @@
     .footer-Buttom article{
         width: 45%
     }
+
+    main .register .datos{
+        flex-direction: row;
+    }
+
+    main .register .datos .box{
+        width: 45%;
+    }
+
 }
