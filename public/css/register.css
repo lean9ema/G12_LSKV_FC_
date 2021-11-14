@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+}
+
+main .register{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .register .log-Red div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+main .register .log-Red div i{
+    margin: 0 10px;
+}
+
+main .register .log-Red div .facebook{
+    text-align: center;
+    color: #fff;
+    background-color: blue;
+    border-radius: 1px;
+}
+
+main .register .log-Red div .google{
+    text-align: center;
+    color:#fff;
+    background-color: red;
+    border-radius: 1px;
+}
+main .register .log-Red div .o{
+    text-align: center;
+}
+
+main .register .datos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+main .register .datos .box{
+    margin: 0 15px;
+}
+
+main .register .datos .box h6{
+    font-size: 12px;
+    margin: 2px;
+}
+
+main .register .datos .box p{
+    font-size: 8px;
+    text-align: left;
+    color: lightgray;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+footer{
+    border: 2px solid black;
+    margin: 20px;
+}
+
+
+.footer-Top{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: space-around;
+    min-width: 250px;
+}
+
+.footer-Top .description{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-Top .description .icon-des{
+    margin: 0 5px;
+    font-size: 40px;
+}
+.footer-Top .description .icon-des p{
+    font-size: 8px;
+}
+
+.footer-Buttom{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-width: 370px;
+    border: 1px solid black;
+    background-color: #FCD8D4;
+    color: white
+}
+
+.footer-Buttom article{
+    width: 100%;
+}
+
+.footer-Buttom .red{
+    margin: 0 20px;
+    padding: 15px;
+}
+
+.footer-Buttom .red .icon{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-Buttom .red .icon i{
+    margin: 0 5px;
+    font-size: 50px;
+}
+
+.footer-Buttom .newsletter{
+    margin: 0 20px;
+    padding: 15px;
+    margin: 0 15px;
+}
+
+.footer-Buttom .newsletter .box{ /*Revisar pq el icono no se pone al lado del input*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 40, 61);
+    border-radius: 30px;
+    width: 250px;
+}
+
+.footer-Buttom .newsletter .box i{
+    font-size: 30px;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.footer-Buttom .newsletter .box .input{
+    background-color: #fff;
+    color: lightgray;
+}
+
+.footer-Buttom .info{
+    margin: 0 20px;
+    padding: 15px;
+    margin: 0 15px;
+}
+
+.footer-Buttom .info div ul{
+    list-style: none;
+}
+
+@media (min-width: 370px){
+    .footer-Top .description{
+        flex-direction: row;
+        width: 20%;
+        min-width: 300px;
+    }
+
+    .footer-Buttom article{
+        width: 45%
+    }
+
+    main .register .datos{
+        flex-direction: row;
+    }
+
+    main .register .datos .box{
+        width: 30%;
+    }
+
+}
