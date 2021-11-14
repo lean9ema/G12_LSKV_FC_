@@ -61,6 +61,11 @@ main .register .datos .box p{
     padding: 5px;
 }
 
+footer{
+    border: 2px solid black;
+    margin: 20px;
+}
+
 
 .footer-Top{
     display: flex;
@@ -157,7 +162,8 @@ main .register .datos .box p{
 @media (min-width: 370px){
     .footer-Top .description{
         flex-direction: row;
-        width: 45%;
+        width: 20%;
+        min-width: 300px;
     }
 
     .footer-Buttom article{
@@ -169,7 +175,7 @@ main .register .datos .box p{
     }
 
     main .register .datos .box{
-        width: 45%;
+        width: 30%;
     }
 
 }
