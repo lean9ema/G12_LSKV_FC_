@@ -17,9 +17,13 @@ div.list-container {
     list-style: none;
     display: flex;
 }
+div.IngresarRegistrarse a{
+    font-size: 12px;
+}
 
 .list-home li{
-    padding: 25px;
+    padding: 20px 14px;
+    font-size: 12px;
 }
 
 .list-home li a {
@@ -28,19 +32,12 @@ div.list-container {
 }
 
 
-div.IngresarRegistrarse{
-    padding-top: 25px;
-}
-
-
-
-
 
 .header-container {
     width: 100%;
     background-color: #F8E2CF;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
     flex-direction: row;
     position: relative;
@@ -76,7 +73,9 @@ div.burger-menu {
 
 div.login-home {
     position: absolute;
-    right: 2.5vw;
+    display: flex;
+    justify-content: flex-end;
+    right: 2vw;
 }
 
 main article img{
@@ -89,11 +88,7 @@ main article img{
     .logo{
         display: flex;
         justify-content: flex-start;
-        width: 12vw;
-    }
-
-    div.login-home {
-        right: 2vw;
+        width: 11vw;
     }
 
     div.burger-menu {
@@ -123,7 +118,7 @@ main article img{
 /* Parte escritorio/tablet */
 @media (min-width: 750px) {
     .logo{
-        width: 95px;
+        width: 50px;
     }
     .header-container .list-container,
     .header-container .IngresarRegistrarse{
@@ -132,6 +127,18 @@ main article img{
     
     div.burger-menu{
         display: none;
+    }
+
+    div.login-home {
+        position: static;
+    }
+
+    div.login-home a {
+        font-size: 15px;
+        justify-content: flex-end;
+    }
+    div.login-home .IngresarRegistrarse a{
+        font-size: 12px;
     }
 
 }
