@@ -8,7 +8,7 @@
 nav{
     width: 100%;
 }
-
+div.IngresarRegistrarse,
 div.list-container { 
     display: none;
 }
@@ -29,7 +29,6 @@ div.list-container {
 
 
 div.IngresarRegistrarse{
-    display: none;
     padding-top: 25px;
 }
 
@@ -57,10 +56,10 @@ div.burger-menu a{
     text-decoration: none;
 }
 
-
 div.login-home a{
     margin: 0px 5px;
 }
+
 div.burger-menu,
 div.login-home{ 
     padding: 15px 0px ;
@@ -74,10 +73,16 @@ div.burger-menu {
     position: absolute;
     left : 18vw;
 }
+
 div.login-home {
     position: absolute;
     right: 2.5vw;
 }
+
+main article img{
+    width: 100%;
+}
+
 
 /* Parte mobile */
 @media (min-width: 350px)  {
@@ -120,7 +125,8 @@ div.login-home {
     .logo{
         width: 95px;
     }
-    div.IngresarResgistrarse{
+    .header-container .list-container,
+    .header-container .IngresarRegistrarse{
         display: block;
     }
     
@@ -128,7 +134,4 @@ div.login-home {
         display: none;
     }
 
-    div.list-conteiner{
-        display: block;
-    }
 }
