@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/login.css">
-    <script src="https://kit.fontawesome.com/c1cf3ee60d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
-    <!--Favicon-->
-    <link rel="shortcut icon" href="images/logo-meta.svg" alt= "logo página web LSKV">
-   
-    <title>login</title>
+    <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Fontawesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/logo-meta.svg" alt= "logo página web LSKV">
+     <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="header-container">
+
                 <div class="logo-container">
                     <img src="images/Logo4.svg" alt="logo de LSKV" class="logo">
                 </div>
-                <div>
+
+                <div class = "list-container">
                     <ul class="list-home">
                         <li><a href="#">Productos</a></li>
                         <li><a href="#">Locales</a></li>
@@ -37,12 +37,21 @@
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </div>
+                
+                <div class="burger-menu">
+                    <a href = "#"><i class="fa fa-bars burger"></i></a>
+                </div>
+
                 <div class="login-home">
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="#"><i class="fas fa-shopping-bag"></i></a>
                     <a href="#"><i class="fas fa-user"></i></a>
+                </div>
+
+                <div class = "IngresarRegistrarse">
                     <a href="#">Ingresar / Registrarse</a>
                 </div>
+
             </div>
         </nav>
     </header>
@@ -53,56 +62,65 @@
         
         <div class="iniciarSesion">
 
-         <h2>Iniciar sesion</h2>
+         <h2 class="izquierda">Iniciar sesion</h2>
+         
          <h4>¿Ya eres cliente?</h4>
          <p>¡Bienvenido de nuevo!</p>
-
+         
 
          <section class="datos">
-            <div class="box">
-                <h6>Dirección de correo electrónico</h6>
-                <p>Email</p>
-            </div>
-            <div class="box">
-                <h6>Contraseña</h6>
-                <p>Contraseña</p>  
-                <a href = "#" > ¿Has olvidado tu contraseña?</a>
-                              
-            </div>
-            
-            
+             <form action="IniciarSesion" method="POST"></form>
+              
+             <p>Usuario</p>
+             <br>
+             <input type="text" name="usuario">
+             <br>
+             <p>Contraseña</p>
+             <input type="password" name="contraseña">
+             <br> 
+             <a href = "#" > ¿Has olvidado tu contraseña?</a>
+          <br> 
+          <button type="button">Ingresar</button>
+          <br> 
         </section>
-
+     
         <section class="log-Red">
             <div>
                 <i class="fab fa-facebook-square"></i>
                 <p class="facebook">Ingresar con Facebook</p>
             </div>
             <div>
+                
                 <i class="fab fa-google"></i>
                 <p class="google">Ingresar con Google</p>
             </div>
             <div>
-                <p class="o">O</p>
+                <br>
+                <h2>O</h2>
             </div>
+            <br>
         </section>
          
 
         </div>
         <div class="registro">
-             <h2>Registrarse</h2>
+            
+             <h2 class="derecha">Registrarse</h2>
              <h4>¿Nuevo cliente?</h4>
              <p>¡Encantado de conocerte!</p>
-             <a href = "#" > Registrarse</a>
-             <p> </p>
-             <ul>
+            
+             <button>Registrarse</button>
+             
+             <br>
+             <div  class="registro-descripcion">
+               <ul>
                  <li>Gestiona tus pedidos</li>
                  <li>Guarda tus compras</li>
                  <li>Gestiona tus compras</li>
                  <li>Guarda tus prendas favoritas</li>
-             </ul>
+             </ul>  
+             </div>
              
-
         </div>
     </article>
 
