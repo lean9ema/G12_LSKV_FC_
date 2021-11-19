@@ -213,10 +213,6 @@ footer{
         min-width: 300px;
     }
 
-    .footer-Buttom article{
-        width: 45%
-    }
-
     main .register .datos{
         flex-direction: row;
         justify-content: center;
