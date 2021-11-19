@@ -57,52 +57,51 @@
     </header>
     <main>
         <article class="inicio">
-        <h2>¡Hola!</h2>
-        <h5>¡Hay muchos productos nuevos esperándote!</h5>
-        
-        <div class="iniciarSesion">
-
-         <h2 class="izquierda">Iniciar sesion</h2>
-         
-         <h4>¿Ya eres cliente?</h4>
-         <p>¡Bienvenido de nuevo!</p>
-         
-
-         <section class="datos">
-             <form action="IniciarSesion" method="POST"></form>
-              
-             <p>Usuario</p>
-             <br>
-             <input type="text" name="usuario">
-             <br>
-             <p>Contraseña</p>
-             <input type="password" name="contraseña">
-             <br> 
-             <a href = "#" > ¿Has olvidado tu contraseña?</a>
-          <br> 
-          <button type="button">Ingresar</button>
-          <br> 
-        </section>
-     
-        <section class="log-Red">
-            <div>
-                <i class="fab fa-facebook-square"></i>
-                <p class="facebook">Ingresar con Facebook</p>
+            <div class="holis">
+                <h2>¡Hola!</h2>
+                <h5>¡Hay muchos productos nuevos esperándote!</h5>
             </div>
-            <div>
+            
+            <div class="contenedor-login">
+               
                 
-                <i class="fab fa-google"></i>
-                <p class="google">Ingresar con Google</p>
-            </div>
-            <div>
-                <br>
-                <h2>O</h2>
-            </div>
-            <br>
-        </section>
-         
+                <div class="iniciarSesion">
 
-        </div>
+                <h2 class="izquierda">Iniciar sesion</h2>
+                
+                <h4>¿Ya eres cliente?</h4>
+                <p>¡Bienvenido de nuevo!</p>
+                
+
+                <section class="datos">
+                    <form action="IniciarSesion" method="POST">
+                    
+                        <label for="fa-user">usuario</label>
+                        <input type="text" name="usuario">
+                        
+                        <label for="password">contraseña</label>
+                        <input type="password" name="contraseña">
+                        
+                        <a href = "#" > ¿Has olvidado tu contraseña?</a>
+                        
+                        <button type="button">Ingresar</button>
+                    </form>
+                
+                </section>
+            
+                <section class="log-Red">
+                    <div>
+                        <i class="fab fa-facebook-square"></i>
+                        <p class="facebook">Ingresar con Facebook</p>
+                    </div>
+                    <div>
+                        
+                        <i class="fab fa-google"></i>
+                        <p class="google">Ingresar con Google</p>
+                    </div> 
+                </section>
+            </div>
+
         <div class="registro">
             
              <h2 class="derecha">Registrarse</h2>
@@ -111,7 +110,6 @@
             
              <button>Registrarse</button>
              
-             <br>
              <div  class="registro-descripcion">
                <ul>
                  <li>Gestiona tus pedidos</li>
