@@ -274,8 +274,22 @@ footer{
         display: none;
     }
 
+<<<<<<< HEAD
     div.login-home {
         position: static;
+=======
+    .holis{
+        text-align: center;
+    }
+    
+    .contenedor-login{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-Buttom article{
+        width: 45%
+>>>>>>> 7656d133a505c8251d5fe743b9f42cb0da4fdfc5
     }
 
     div.login-home a {
