@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0px 1px;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -101,6 +101,9 @@ main .inicio .iniciarSesion .datos{
     text-align: center;
   
 }
+main .inicio .iniciarSesion .datos button{
+    margin: 10px 3px;  
+}
  main .inicio .iniciarSesion .log-Red .facebook{
     text-align: center;
     color: #fff;
@@ -149,6 +152,9 @@ main .iniciarSesion{
 main .registro{
     width: 45%;
     flex-direction:column;
+}
+main .registro button{
+    margin: 10px 3px;
 }
 main .registro .derecha {
     text-align: justify;
