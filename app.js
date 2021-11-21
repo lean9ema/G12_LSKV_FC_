@@ -31,13 +31,13 @@ app.get('/productCart', (req,res) => {
 })
 
 app.get('/productCart2', (req,res) => {
-    res.sendFile(__dirname + '/views/productCart.html');
+    res.sendFile(__dirname + '/views/productCart3.html');
 })
 
 app.get('/productCart3', (req,res) => {
-    res.sendFile(__dirname + '/views/productCart.html');
+    res.sendFile(__dirname + '/views/productCart2.html');
 })
 
 app.get('/productCart4', (req,res) => {
-    res.sendFile(__dirname + '/views/productCart.html');
+    res.sendFile(__dirname + '/views/productCart4.html');
 })

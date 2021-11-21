@@ -106,6 +106,13 @@ main .register .datos div label{
     flex-direction: column;
     margin: 2px;
 }
+main .next{
+    background-color: red;
+    color: #fff;
+    padding: 3px;
+    border-radius: 5%;
+
+}
 
 footer{
     border: 2px solid black;
