@@ -136,13 +136,14 @@ h2{
 h5{
     text-align: center;
 }
-main .inicio {
+main article{
     display: flex;
     flex-wrap: wrap;
     margin: 0 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     
 }
 main .iniciarSesion{
@@ -314,5 +315,15 @@ footer{
     .footer-Buttom article{
         width: 45%
     }
+    
+footer .footer-Buttom .newsletter .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 40, 61);
+    border-radius: 30px;
+    width: 250px;
+}
 }
 
