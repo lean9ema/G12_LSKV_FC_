@@ -51,44 +51,57 @@
         <h5>¡Hay muchos productos nuevos esperándote!</h5>
         <h3>Registro</h3>
         <section class="log-Red">
-            <div>
+            <div class="facebook">
                 <i class="fab fa-facebook-square"></i>
-                <p class="facebook">Registrarse con Facebook</p>
+                <p>Registrarse con Facebook</p>
             </div>
-            <div>
+            <div class="google">
                 <i class="fab fa-google"></i>
-                <p class="google">Registrarse con Google</p>
+                <p>Registrarse con Google</p>
             </div>
             <div>
                 <p class="o">O</p>
             </div>
         </section>
         <section class="datos">
-            <div class="box">
-                <h6>Dirección de correo electrónico</h6>
-                <p>Email</p>
-            </div>
-            <div class="box">
-                <h6>Contraseña</h6>
-                <p>Contraseña</p>                
-            </div>
-            <div class="box">
-                <h6>Nombre</h6>
-                <p>Nombre</p>                
-            </div>
-            <div class="box">
-                <h6>Apellido</h6>
-                <p>Apellido</p>                
-            </div>
-            <div class="box">
-                <h6>DNI</h6>
-                <p>DNI</p>                
-            </div>
-            <div class="box">
-                <h6>Fecha de nacimiento</h6>
-                <p>dd/mm/aaaa</p>                
-            </div>
-
+            <form action="/" method="post">
+                <div>
+                    <label for="email">
+                        Dirección de correo electronico
+                        <input type="email" name="email" id="email" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="password">
+                        Contraseña
+                        <input type="password" name="password" id="password">
+                    </label>
+                </div>
+                <div>
+                    <label for="nombre">
+                        Nombre
+                        <input type="text" name="nombre" id="nombre">
+                    </label>
+                </div>
+                <div>
+                    <label for="apellido">
+                        Apellido
+                        <input type="text" name="apellido" id="apellido">
+                    </label>
+                </div>
+                <div>
+                    <label for="dni">
+                        DNI
+                        <input type="number" name="dni" id="dni" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="fNac">
+                        Fecha de nacimiento
+                        <input type="date" name="fNac" id="fNac">
+                    </label>
+                </div>
+            </form>
         </section>
     </article>
 

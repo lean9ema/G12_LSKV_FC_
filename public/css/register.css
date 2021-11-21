@@ -63,49 +63,48 @@ main .register .log-Red div{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: 5px;
 }
 main .register .log-Red div i{
     margin: 0 10px;
 }
 
-main .register .log-Red div .facebook{
+
+main .register .log-Red .facebook{
     text-align: center;
+    padding: 3px;
     color: #fff;
     background-color: blue;
-    border-radius: 1px;
+    border-radius: 5%;
 }
 
-main .register .log-Red div .google{
+main .register .log-Red .google{
     text-align: center;
+    padding: 3px;
     color:#fff;
     background-color: red;
-    border-radius: 1px;
+    border-radius: 5%;
 }
 main .register .log-Red div .o{
     text-align: center;
 }
 
-main .register .datos{
+main .register .datos form{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: column;/**/
+    justify-content: center;
 }
 
-main .register .datos .box{
-    margin: 0 15px;
-}
-
-main .register .datos .box h6{
-    font-size: 12px;
+main .register .datos div{
+    width: 90%;
     margin: 2px;
 }
 
-main .register .datos .box p{
-    font-size: 8px;
-    text-align: left;
-    color: lightgray;
-    border: 1px solid black;
-    padding: 5px;
+main .register .datos div label{
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
 }
 
 footer{
@@ -207,6 +206,14 @@ footer{
 }
 
 @media (min-width: 370px){
+    main .register .datos form{
+        flex-direction: row;/**/
+    }
+    
+    main .register .datos div{
+        width: 45%;
+        
+    }
     .footer-Top .description{
         flex-direction: row;
         width: 20%;
@@ -237,4 +244,11 @@ footer{
         width: 30%;
     }
 
+}
+
+@media (min-width: 769px){
+    
+    main .register .datos div{
+        width: 30%;
+    }
 }
