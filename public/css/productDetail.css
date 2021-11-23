@@ -188,11 +188,11 @@ footer{
 main article {
     display: flex;
     flex-direction: column;
-    margin: 0px 20px
+    margin: 0px 10px
 }
 
 div.back { 
-    margin:10px 10px;
+    padding:10px 10px;
 }
 
 main article a,
@@ -201,19 +201,37 @@ div.back a{
     text-decoration: none;
 }
 
+div.img-container{
+    position: relative;    
+}
+
 main article .img-principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+main article .img-sec { 
+    display: none;
+}
+main article .img-sec img,
 main article .img-principal img { 
     width: 100%;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
+div.slider-buttons-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 15px ;
+    position: absolute;
+    top: 50%;
+}
+
+
 main article p.nombre-prod {
+    padding-top: 10px;
     font-size: 22px;
     font-weight: bold;
 }
@@ -224,7 +242,7 @@ main article div.stars {
 }
 
 main article div.stars i { 
-    margin: 0px 1px;
+    margin: 0px 3px;
 }
 
 main article div.stars p { 
@@ -235,6 +253,39 @@ main article div.stars p {
 main article p.precio{
     font-size: 1.25rem;
     font-weight: bold;
+}
+
+main div.colors a { 
+    padding: 2px 5px;
+}
+main div.colors a i { 
+    transition: all 450ms;
+}
+
+main div.colors a i:hover { 
+    font-size: 25px;
+}
+
+main div.talle { 
+    display: flex;
+    flex-direction: row;
+}
+main div.talle p { 
+    position: absolute;
+    font-size: 10px;
+    top: 25%; 
+    left: 30%;
+}
+main div.talle a{ 
+    position: relative;
+    margin: 0px 5px;
+    padding: 12px 12px;
+    border-radius: 5px;
+    background-color: #ebebeb;
+}
+
+main div.guia { 
+    padding-top: 5px;
 }
 
 main article p.title-recom { 
@@ -268,7 +319,7 @@ main article p.description {
 
 
 
-/* Parte mobile */
+/* Parte tablet */
 @media (min-width: 370px)  {
     .logo{
         display: flex;
@@ -295,7 +346,41 @@ main article p.description {
     .footer-Buttom article{
         width: 45%
     }
+    /* Product Detail */
 
+    div.slider-buttons-container {
+        display: none;
+    }
+
+    main article { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main article div.product-description { 
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    main article .img-container { 
+        width: 45%;
+    }
+    main article .img-sec,
+    main article .img-principal { 
+        display: flex;
+        margin-bottom: 10px;
+    }
+    main article div.product-description p.nombre-prod{
+        padding-top: 0px;
+    }
+    main article div.product-description div.description p.title { 
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0px 10px 0px 0px ;
+    }
 }
 
 
@@ -306,12 +391,7 @@ main article p.description {
 
 
 
-
-
-
-
-
-/* Parte escritorio/tablet */
+/* Parte escritorio */
 @media (min-width: 750px) {
     .logo{
         width: 50px;
@@ -337,4 +417,23 @@ main article p.description {
         font-size: 12px;
     }
 
+    /* Product Detail */
+
+    main article div.img-container {
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    main article div.img-principal,
+    main article div.img-sec{ 
+        width: 45%;
+        margin: 0px;
+        flex-direction: row;
+        align-items: normal;
+    }
+    main article div.img-container img { 
+        width: 100%;
+        box-shadow: none;
+    }
 }
