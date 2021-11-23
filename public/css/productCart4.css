@@ -181,6 +181,14 @@ footer{
     list-style: none;
 }
 
+
+
+/* Detalle de producto */
+
+
+
+
+
 /* Parte mobile */
 @media (min-width: 370px)  {
     .logo{
@@ -210,17 +218,6 @@ footer{
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -63,49 +63,55 @@ main .register .log-Red div{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: 5px;
 }
 main .register .log-Red div i{
     margin: 0 10px;
 }
 
-main .register .log-Red div .facebook{
+
+main .register .log-Red .facebook{
     text-align: center;
+    padding: 3px;
     color: #fff;
     background-color: blue;
-    border-radius: 1px;
+    border-radius: 5%;
 }
 
-main .register .log-Red div .google{
+main .register .log-Red .google{
     text-align: center;
+    padding: 3px;
     color:#fff;
     background-color: red;
-    border-radius: 1px;
+    border-radius: 5%;
 }
 main .register .log-Red div .o{
     text-align: center;
 }
 
-main .register .datos{
+main .register .datos form{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: column;/**/
+    justify-content: center;
 }
 
-main .register .datos .box{
-    margin: 0 15px;
-}
-
-main .register .datos .box h6{
-    font-size: 12px;
+main .register .datos div{
+    width: 90%;
     margin: 2px;
 }
 
-main .register .datos .box p{
-    font-size: 8px;
-    text-align: left;
-    color: lightgray;
-    border: 1px solid black;
-    padding: 5px;
+main .register .datos div label{
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+}
+main .next{
+    background-color: red;
+    color: #fff;
+    padding: 3px;
+    border-radius: 5%;
+
 }
 
 footer{
@@ -182,7 +188,7 @@ footer{
     align-items: center;
     background-color: rgb(48, 40, 61);
     border-radius: 30px;
-    width: 250px;
+    min-width: 40%;
 }
 
 .footer-Buttom .newsletter .box i{
@@ -207,14 +213,33 @@ footer{
 }
 
 @media (min-width: 370px){
+    main .register .datos form{
+        flex-direction: row;/**/
+    }
+    
+    main .register .datos div{
+        width: 45%;
+        
+    }
     .footer-Top .description{
         flex-direction: row;
         width: 20%;
         min-width: 300px;
     }
 
-    .footer-Buttom article{
-        width: 45%
+
+    .footer-Buttom {
+        min-width: 30%;
+
+    }
+
+    .footer-Buttom{
+        align-self: center;
+    }
+
+
+    .footer-Buttom .newsletter .box{
+        width: 40%;
     }
 
     main .register .datos{
@@ -226,4 +251,11 @@ footer{
         width: 30%;
     }
 
+}
+
+@media (min-width: 769px){
+    
+    main .register .datos div{
+        width: 30%;
+    }
 }

@@ -1,52 +1,186 @@
-*{
+* {
+    margin: 0px 1px;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
 nav{
     width: 100%;
 }
+div.IngresarRegistrarse,
+div.list-container { 
+    display: none;
+}
+
+.list-home {
+    list-style: none;
+    display: flex;
+}
+div.IngresarRegistrarse a{
+    font-size: 12px;
+}
+
+.list-home li{
+    padding: 20px 14px;
+    font-size: 12px;
+}
+
+.list-home li a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+
 
 .header-container {
-   width: 100%;
-   background-color: #F8E2CF;
-   display: flex;
-   justify-content: space-between;
-   text-align: center;
+    width: 100%;
+    background-color: #F8E2CF;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: row;
+    position: relative;
 }
 
 .logo{
+    width: 50px;
+}
+
+div.login-home a,
+div.burger-menu a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+div.login-home a{
+    margin: 0px 5px;
+}
+
+div.burger-menu,
+div.login-home{ 
+    padding: 15px 0px ;
+}
+
+div.logo-container{
+    padding: 6px 0px ;
+}
+
+div.burger-menu {
+    position: absolute;
+    left : 18vw;
+}
+
+div.login-home {
+    position: absolute;
     display: flex;
-    justify-content: flex-start;
-    width: 20%;
+    justify-content: flex-end;
+    right: 2vw;
 }
 
 main{
   
     border: 2px solid black;
-    margin: 0 50px;
+    margin:10px;
     padding: 10px;
     
+    
 }
-main .a {
+
+
+
+main .inicio .iniciarSesion .izquierda{
+    text-align: justify;
+    align-items: flex-start;
+}
+main .inicio .iniciarSesion .datos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+  
+}
+main .inicio .iniciarSesion .datos button{
+    margin: 10px 3px;  
+}
+ main .inicio .iniciarSesion .log-Red .facebook{
+    text-align: center;
+    color: #fff;
+    background-color: blue;
+    border-radius: 1px;
+ }
+ main .inicio .iniciarSesion .log-Red div i {
+    margin: 0 10px;
+}
+
+
+main .iniciarSesion .log-Red div .google{
+    text-align: center;
+    color:#fff;
+    background-color: red;
+    border-radius: 1px;
+}
+main .iniciarSesion .log-Red div .o{
+    text-align: center;
+}
+ 
+p{ 
+    text-align: left;  
+    font-size: small; 
+}
+h2{
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+}
+main article{
     display: flex;
     flex-wrap: wrap;
     margin: 0 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  
+
     
+}
+main .iniciarSesion{
+ width: 45%;
+ flex-direction:column;
+}
+main .registro{
+    width: 45%;
+    flex-direction:column;
+}
+main .registro button{
+    margin: 10px 3px;
+}
+main .registro .derecha {
+    text-align: justify;
+    align-items: flex-start;
+
+}
+main .registro .derecha .registro-descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
 }
 footer{
     border: 2px solid black;
-    margin: 20px;
+    margin: 10px;
 }
 
 .footer-Top{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 20px;
-    justify-content: space-around;
+    margin: 10px;
+    justify-content: left;
     min-width: 250px;
+    
 }
 
 .footer-Top .description{
@@ -54,7 +188,7 @@ footer{
     flex-wrap: wrap;
     flex-direction: column;
     margin: 0 10px;
-    align-items: center;
+    align-items: left;
     width: 100%;
 }
 
@@ -69,21 +203,21 @@ footer{
 .footer-Buttom{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    min-width: 370px;
-    border: 1px solid black;
+    align-items: left;
+    justify-content: left;
+    min-width: 200px;
+    border-top: 1px solid black;
     background-color: #FCD8D4;
     color: white
 }
 
 .footer-Buttom article{
-    width: 100%;
+    width: 58%;
 }
 
 .footer-Buttom .red{
-    margin: 0 20px;
-    padding: 15px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .footer-Buttom .red .icon{
@@ -108,8 +242,8 @@ footer{
     justify-content: center;
     align-items: center;
     background-color: rgb(48, 40, 61);
-    border-radius: 30px;
-    width: 250px;
+    border-radius: 10px;
+    width: 211px;
 }
 
 .footer-Buttom .newsletter .box i{
@@ -134,13 +268,62 @@ footer{
 }
 
 @media (min-width: 700px){
+    
+    .logo{
+        width: 60px;
+    }
+    .header-container .list-container,
+    .header-container .IngresarRegistrarse{
+        display: block;
+    }
+    
+    div.burger-menu{
+        display: none;
+    } 
+
+    div.login-home {
+        position: static;
+    }
+
+    div.login-home a {
+        font-size: 15px;
+        justify-content: flex-end;
+    }
+    div.login-home .IngresarRegistrarse a{
+        font-size: 12px;
+    }
+    main .inicio .iniciarSesion .datos {
+        
+        margin: 20px 1px;
+    }
+    
     .footer-Top .description{
         flex-direction: row;
         width: 20%;
         min-width: 300px;
     }
 
+    .holis{
+        text-align: center;
+    }
+    
+    .contenedor-login{
+        display: flex;
+        justify-content: space-between;
+    }
+
     .footer-Buttom article{
         width: 45%
     }
+    
+footer .footer-Buttom .newsletter .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 40, 61);
+    border-radius: 30px;
+    width: 250px;
 }
+}
+
