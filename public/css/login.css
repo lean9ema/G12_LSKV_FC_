@@ -103,7 +103,7 @@ main section .cuerpo{
    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
- 
+   width: 100%;
  }
 
 
@@ -117,10 +117,16 @@ main section  .cuerpo .register {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    margin: 10px;
 }
+
 
 main section .cuerpo .login .log-Red{
 margin: 4px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
 }
 main section .cuerpo .login .log-Red div{
     display: flex;
@@ -153,11 +159,7 @@ main section .cuerpo .login form {
     
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    
-
-
-    
+    justify-content: center;  
 }
 main section .cuerpo .login form button{
     width: 50%;
@@ -191,7 +193,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
-    justify-content: left;
+    justify-content: center;
     min-width: 250px;
     
 }
@@ -203,8 +205,12 @@ footer{
     margin: 0 10px;
     align-items: left;
     width: 100%;
+    align-items: center;
+    justify-content: center;
 }
-
+.footer-Top .description h4{
+    text-align: center;
+}
 
 .footer-Top .description .icon-des{
     margin: 0 5px;
@@ -217,12 +223,13 @@ footer{
 .footer-Buttom{
     display: flex;
     flex-flow: column;
-    align-items: left;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     min-width: 200px;
     border-top: 1px solid black;
     background-color: #FCD8D4;
     color: white
+    
 }
 
 .footer-Buttom article{
@@ -279,6 +286,28 @@ footer{
 
 .footer-Buttom .info div ul{
     list-style: none;
+}
+@media (min-width:370 ){
+    .footer-Top .description{
+        flex-direction: row;
+        width: 20%;
+        min-width: 300px;
+    }
+
+
+    .footer-Buttom {
+        min-width: 30%;
+
+    }
+
+    .footer-Buttom{
+        align-self: center;
+    }
+
+
+    .footer-Buttom .newsletter .box{
+        width: 40%;
+    }
 }
 
 @media (min-width: 700px){

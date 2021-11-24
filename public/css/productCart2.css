@@ -76,6 +76,32 @@ div.login-home {
     justify-content: flex-end;
     right: 2vw;
 }
+/* Main*/
+
+main section .paso {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main section .paso .pasoDos {
+    background-color: red;
+    color: #fff;
+}
+main section .paso h2 {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 1px solid black;
+    padding-top: 4px;
+}
+
+
+
+
 /*FOOTER*/
 footer{
     border: 2px solid black;
