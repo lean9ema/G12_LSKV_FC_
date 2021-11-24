@@ -92,6 +92,10 @@ main{
     
     
 }
+main section{
+    align-items: center;
+    align-content: center;
+}
 main section .cuerpo{
     margin: 6px;
     text-align: center;
@@ -304,6 +308,7 @@ footer{
     }
     main section .cuerpo {
        display: inline-block;
+       margin-left: 80px;
       
     }
     main section .cuerpo .login {
