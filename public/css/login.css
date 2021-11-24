@@ -1,6 +1,6 @@
 * {
     margin: 0px 1px;
-    padding: 0;
+    
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
@@ -77,98 +77,107 @@ div.login-home {
     justify-content: flex-end;
     right: 2vw;
 }
+h2{
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
 
 main{
   
     border: 2px solid black;
-    margin:10px;
-    padding: 10px;
+    margin: 4px;
+    padding: 4px;
     
     
 }
-
-
-
-main .inicio .iniciarSesion .izquierda{
-    text-align: justify;
-    align-items: flex-start;
-}
-main .inicio .iniciarSesion .datos{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-    justify-content: center;
+main section .cuerpo{
+    margin: 6px;
     text-align: center;
-  
-}
-main .inicio .iniciarSesion .datos button{
-    margin: 10px 3px;  
-}
- main .inicio .iniciarSesion .log-Red .facebook{
-    text-align: center;
-    color: #fff;
-    background-color: blue;
-    border-radius: 1px;
- }
- main .inicio .iniciarSesion .log-Red div i {
-    margin: 0 10px;
-}
-
-
-main .iniciarSesion .log-Red div .google{
-    text-align: center;
-    color:#fff;
-    background-color: red;
-    border-radius: 1px;
-}
-main .iniciarSesion .log-Red div .o{
-    text-align: center;
-}
- 
-p{ 
-    text-align: left;  
-    font-size: small; 
-}
-h2{
-    text-align: center;
-}
-
-h5{
-    text-align: center;
-}
-main article{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 20px;
+   justify-content: center;
+   display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+ 
+ }
+
+
+main section  .cuerpo .login form label {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+main section  .cuerpo .register {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main section .cuerpo .login .log-Red{
+margin: 4px;
+}
+main section .cuerpo .login .log-Red div{
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: 5px;
+}
+main section .cuerpo .login .log-Red div i{
+    margin: 0 10px;
+}
+main section .cuerpo .login .log-Red .facebook{
+    text-align: center;
+    padding: 3px;
+    color: #fff;
+    background-color: blue;
+    border-radius: 5%;
+}
+main section .cuerpo .login .log-Red .google{
+    text-align: center;
+    padding: 3px;
+    color:#fff;
+    background-color: red;
+    border-radius: 5%;
+}
+main section .cuerpo .login .log-Red div .o{
+    text-align: center;
+}
+main section .cuerpo .login form {
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    
+
 
     
 }
-main .iniciarSesion{
- width: 45%;
- flex-direction:column;
-}
-main .registro{
-    width: 45%;
-    flex-direction:column;
-}
-main .registro button{
-    margin: 10px 3px;
-}
-main .registro .derecha {
-    text-align: justify;
-    align-items: flex-start;
-
-}
-main .registro .derecha .registro-descripcion{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
+main section .cuerpo .login form button{
+    width: 50%;
     justify-content: center;
-    text-align: center;
+    margin: 0px 50px;
+    border-radius: 5px;
+    
 }
+main section .cuerpo .login form button:hover{
+   
+   background-color:#F8E2CF
+}
+
+main section .cuerpo .register button{
+    width: 50%;
+    justify-content: center;
+    margin: 0px 50px;
+    border-radius: 5px;
+}
+main section .cuerpo .register button:hover{
+    background-color:#F8E2CF
+}
+
+
 footer{
     border: 2px solid black;
     margin: 10px;
@@ -191,6 +200,7 @@ footer{
     align-items: left;
     width: 100%;
 }
+
 
 .footer-Top .description .icon-des{
     margin: 0 5px;
@@ -292,15 +302,39 @@ footer{
     div.login-home .IngresarRegistrarse a{
         font-size: 12px;
     }
-    main .inicio .iniciarSesion .datos {
-        
-        margin: 20px 1px;
+    main section .cuerpo {
+       display: in;
+        /* flex-direction: column; */
     }
+    main section .cuerpo .login {
+        
+        float: left;
+        
+    }
+    main section .cuerpo .register{
+        width:300px;
+         height:auto; 
+         float:left;
+          display:inline;
+    }
+     main section .cuerpo .register ul li{
+         margin: 2px;
+     }
+     main section .cuerpo .login{
+        display:inline-block
+     }
+     main section .cuerpo .register{
+        display:inline-block
+     }
     
     .footer-Top .description{
-        flex-direction: row;
+       
         width: 20%;
-        min-width: 300px;
+        
+    }
+    main section .cuerpo article{
+        flex-direction: row;
+        width: 45%;
     }
 
     .holis{
@@ -324,6 +358,17 @@ footer .footer-Buttom .newsletter .box {
     background-color: rgb(48, 40, 61);
     border-radius: 30px;
     width: 250px;
+}
+.footer-Buttom {
+    
+    display: flex;
+
+    align-items: left;
+    justify-content: left;
+    min-width: 200px;
+    border-top: 1px solid black;
+    background-color: #FCD8D4;
+    color: white;
 }
 }
 
