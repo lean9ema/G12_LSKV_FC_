@@ -74,53 +74,54 @@
 
                 <p class ="description"> Dirección de entrega </p>
 
-                <div class = "form">
-                    <div>
-                        <p>Nombre de que recibe</p>
+                <div class="form">
+                    <form action="/" method="POST">
+                        <label for="name">
+                            Nombre de que recibe:
+                            <input type="name" id="name" name="name">
+                        </label>
+                        <label for="tel">
+                            Telefono celular: 
+                            <input type="tel" id="tel" name="tel">
+                        </label>
+                        <label for="company">
+                            Empresa: 
+                            <input type="company" id="company" name="company"> 
+                        </label>
+                        <label for="dir">
+                            Calle/Altura/Piso/Puerta: 
+                            <input type="dir" id="dir" name="dir">
+                            <input type="dir" id="dir" name="dir">
+                            <input type="dir" id="dir" name="dir">
+                            <input type="dir" id="dir" name="dir">
+                        </label>
+                    </form>
 
-                    </div>
-
-                    <div>
-                        <p> Telefono celular </p>
-                        
-                    </div>
-
-                    <div>
-                        <p> Empresa </p>
-                        
-                    </div>
-
-                    <div>
-                        <p>Calle/Altura/Piso/Puerta</p>
-                        
-                    </div>
-
-
-                    <div>
-                        <p> Codigo Postal</p>
-                        
-                    </div>
-
-                    <div>
-                        <p> Pais </p>
-                        
-                    </div>
-
-                    <div>
-                        <p> Provincia </p>
-                        
-                    </div>
-
-                    <div>
-                        <p> Ciudad </p>
-                        
-                    </div>
-
-                    <div>
-                        <p> Barrio </p>
-                        
-                    </div>
+                    <form action="/" method="POST">
+                        <label for="codPost">
+                            Codigo Postal: 
+                            <input type="codPost" id="codPost" name="codPost">
+                        </label>
+                        <label for="country">
+                            Pais:
+                            <input type="country" id="country" name="country"> 
+                        </label>
+                        <label for="Prov">
+                            Provincia:
+                            <input type="Prov" id="Prov" name="Prov">
+                        </label>
+                        <label for="town">
+                            Ciudad: 
+                            <input type="town" id="town" name="town">
+                        </label>
+                        <label for="barrio">
+                            Barrio: 
+                            <input type="barrio" id="barrio" name="barrio">
+                        </label>
+                    </form>
                 </div>
+
+                <button type="submit"> ENVIAR </button>
 
             </section>
 
