@@ -183,15 +183,13 @@ footer{
 
 
 /* ProductCar */
-
 main section h4.title { 
     display: flex;
     position: relative;
     justify-content:center;
     font-size: 25px;
-    margin: 15px 0px 20px;
+    margin: 15px 0px 40px;
 }
-
 main section h4.title:before{
     content: "";
     position: absolute;
@@ -200,6 +198,7 @@ main section h4.title:before{
     bottom: 2px;
     border-bottom: 3px solid red;
 }
+
 
 main section .paso{
     display: flex;
@@ -234,7 +233,18 @@ main section .paso h2{
  main section .paso .pasoTres{
      background-color: red;
      color: #fff;
- }
+ } 
+
+main section p.description { 
+    display: flex;
+    text-decoration:underline black;
+    font-size: 25px;
+    justify-content: center;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
+
 
 
 /* PARTE TABLET */
