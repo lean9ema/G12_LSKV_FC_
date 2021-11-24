@@ -182,10 +182,62 @@ footer{
 }
 
 
+/* ProductCar */
+
+main section h4.title { 
+    display: flex;
+    position: relative;
+    justify-content:center;
+    font-size: 25px;
+    margin: 15px 0px 20px;
+}
+
+main section h4.title:before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    bottom: 2px;
+    border-bottom: 3px solid red;
+}
+
+main section .paso{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+}
+
+main section .paso:before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    bottom: 50%;
+    border-bottom: 3px solid black;
+    z-index: 0;
+}
+ 
+main section .paso h2{
+    text-align: center ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 1px solid black ;
+    padding-top: 4px;
+    z-index: 1000;
+    background-color: #fff;
+ }
+
+ main section .paso .pasoTres{
+     background-color: red;
+     color: #fff;
+ }
 
 
-
-/* Parte mobile */
+/* PARTE TABLET */
 @media (min-width: 370px)  {
     .logo{
         display: flex;
@@ -226,9 +278,7 @@ footer{
 
 
 
-
-
-/* Parte escritorio/tablet */
+/* PARTE DESKTOP */
 @media (min-width: 750px) {
     .logo{
         width: 50px;
