@@ -244,9 +244,36 @@ main section p.description {
     font-weight: bold;
 }
 
+main section div.form { 
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    justify-content: space-around;
+}
 
+main section div.form form label{ 
+    display: flex;
+    flex-direction: column;
+    padding: 7px 0px ;
+}
+main section div.form form label select,
+main section div.form form label input { 
+    width: 100px;
+}
 
+main div  { 
+    display: flex;
+    justify-content: center;
+}
 
+main div button { 
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+}
 /* PARTE TABLET */
 @media (min-width: 370px)  {
     .logo{
@@ -275,17 +302,12 @@ main section p.description {
         width: 45%
     }
 
+
+    main section div.form form label select,
+    main section div.form form label input { 
+    width: 150px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* PARTE DESKTOP */
@@ -313,5 +335,8 @@ main section p.description {
     div.login-home .IngresarRegistrarse a{
         font-size: 12px;
     }
-
+    main section div.form form label select,
+    main section div.form form label input { 
+    width: 200px;
+    }
 }

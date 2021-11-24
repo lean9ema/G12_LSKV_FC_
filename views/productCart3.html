@@ -78,52 +78,75 @@
                     <form action="/" method="POST">
                         <label for="name">
                             Nombre de que recibe:
-                            <input type="name" id="name" name="name">
+                            <input type="text" id="name" name="name" placeholder="Nombre Completo">
                         </label>
                         <label for="tel">
                             Telefono celular: 
-                            <input type="tel" id="tel" name="tel">
+                            <input type="tel" id="tel" name="tel" placeholder="ej:1122334455">
                         </label>
                         <label for="company">
                             Empresa: 
-                            <input type="company" id="company" name="company"> 
+                            <input type="text" id="company" name="company" placeholder="Envio a domicilio laboral">
                         </label>
                         <label for="dir">
                             Calle/Altura/Piso/Puerta: 
-                            <input type="dir" id="dir" name="dir">
-                            <input type="dir" id="dir" name="dir">
-                            <input type="dir" id="dir" name="dir">
-                            <input type="dir" id="dir" name="dir">
+                            <input type="number" id="dir" name="dir" placeholder="Calle">
+                            <input type="number" id="dir" name="dir" placeholder="Altura">
+                            <input type="number" id="dir" name="dir" placeholder="Piso">
+                            <input type="number" id="dir" name="dir" placeholder="Puerta">
                         </label>
                     </form>
 
                     <form action="/" method="POST">
                         <label for="codPost">
                             Codigo Postal: 
-                            <input type="codPost" id="codPost" name="codPost">
+                            <input type="text" id="codPost" name="codPost" placeholder="CP:012">
                         </label>
                         <label for="country">
                             Pais:
-                            <input type="country" id="country" name="country"> 
+                            <select name="country">
+                                <option value="arg"> Argentina </option>
+                                <option value="br"> Brasil </option>
+                                <option value="uy"> Uruguay </option>
+                                <option value="par"> Paraguay </option>
+                                <option value="ch"> Chile </option>
+                            </select>
                         </label>
                         <label for="Prov">
                             Provincia:
-                            <input type="Prov" id="Prov" name="Prov">
+                            <select name="Prov">
+                                <option value="bsas">Buenos Aires</option>     
+                                <option value="cor">Cordoba</option>
+                                <option value="men">Mendoza</option>
+                                <option value="sl">San Luis</option>
+                            </select>
                         </label>
                         <label for="town">
                             Ciudad: 
-                            <input type="town" id="town" name="town">
+                            <select name="town">
+                                <option value="CABA">Ciudad Autonoma de Buenos Aires</option>
+                                <option value="CJJ">Ciudad de Jujuy</option>
+                                <option value="CM">Ciudad de Mar del Plata</option>
+                                <option value="CST">Ciudad San Miguel de Tucuman</option>
+                            </select>
                         </label>
                         <label for="barrio">
                             Barrio: 
-                            <input type="barrio" id="barrio" name="barrio">
+                            <select name="barrio">
+                                <option value="bel">Belgrano</option>
+                                <option value="bal">Balvanera</option>
+                                <option value="rec">Recoleta</option>
+                                <option value="sc">San Cristobal</option>
+                                <option value="pp">Parque Patricios</option>
+                            </select>
                         </label>
                     </form>
                 </div>
 
-                <button type="submit"> ENVIAR </button>
-
             </section>
+            <div>
+                <button type="submit"> ENVIAR </button>
+            </div>
 
         </main>
 
