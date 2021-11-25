@@ -1,0 +1,857 @@
+* {
+    margin: 0px 1px;
+    
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+}
+div.IngresarRegistrarse,
+div.list-container { 
+    display: none;
+}
+
+.list-home {
+    list-style: none;
+    display: flex;
+}
+div.IngresarRegistrarse a{
+    font-size: 12px;
+}
+
+.list-home li{
+    padding: 20px 14px;
+    font-size: 12px;
+}
+
+.list-home li a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+
+.header-container {
+    width: 100%;
+    background-color: #F8E2CF;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.logo{
+    width: 50px;
+}
+
+div.login-home a,
+div.burger-menu a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+div.login-home a{
+    margin: 0px 5px;
+}
+
+div.burger-menu,
+div.login-home{ 
+    padding: 15px 0px ;
+}
+
+div.logo-container{
+    padding: 6px 0px ;
+}
+
+div.burger-menu {
+    position: absolute;
+    left : 18vw;
+}
+
+div.login-home {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    right: 2vw;
+}
+h2{
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.footer-Top{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+    min-width: 250px;
+    
+}
+
+.footer-Top .description{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 10px;
+    align-items: left;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.footer-Top .description h4{
+    text-align: center;
+}
+
+.footer-Top .description .icon-des{
+    margin: 0 5px;
+    font-size: 40px;
+}
+.footer-Top .description .icon-des p{
+    font-size: 8px;
+}
+
+.footer-Buttom{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    border-top: 1px solid black;
+    background-color: #FCD8D4;
+    color: white
+    
+}
+
+.footer-Buttom article{
+    width: 58%;
+}
+
+.footer-Buttom .red{
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer-Buttom .red .icon{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-Buttom .red .icon i{
+    margin: 0 5px;
+    font-size: 50px;
+}
+
+.footer-Buttom .newsletter{
+    margin: 0 20px;
+    padding: 15px;
+    margin: 0 15px;
+}
+
+.footer-Buttom .newsletter .box{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 40, 61);
+    border-radius: 10px;
+    width: 211px;
+}
+
+.footer-Buttom .newsletter .box i{
+    font-size: 30px;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.footer-Buttom .newsletter .box .input{
+    background-color: #fff;
+    color: lightgray;
+}
+
+.footer-Buttom .info{
+    margin: 0 20px;
+    padding: 15px;
+    margin: 0 15px;
+}
+
+.footer-Buttom .info div ul{
+    list-style: none;
+}
+
+/*Login*/
+main{
+  
+    border: 2px solid black;
+    margin: 4px;
+    padding: 4px;
+    
+    
+}
+main section{
+    align-items: center;
+    align-content: center;
+}
+main section .cuerpo{
+    margin: 6px;
+    text-align: center;
+   justify-content: center;
+   display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   width: 100%;
+ }
+
+
+main section  .cuerpo .login form label {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+main section  .cuerpo .register {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+main section .cuerpo .login .log-Red{
+margin: 4px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+main section .cuerpo .login .log-Red div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+main section .cuerpo .login .log-Red div i{
+    margin: 0 10px;
+}
+main section .cuerpo .login .log-Red .facebook{
+    text-align: center;
+    padding: 3px;
+    color: #fff;
+    background-color: blue;
+    border-radius: 5%;
+}
+main section .cuerpo .login .log-Red .google{
+    text-align: center;
+    padding: 3px;
+    color:#fff;
+    background-color: red;
+    border-radius: 5%;
+}
+main section .cuerpo .login .log-Red div .o{
+    text-align: center;
+}
+main section .cuerpo .login form {
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;  
+}
+main section .cuerpo .login form button{
+    width: 50%;
+    justify-content: center;
+    margin: 0px 50px;
+    border-radius: 5px;
+    
+}
+main section .cuerpo .login form button:hover{
+   
+   background-color:#F8E2CF
+}
+
+main section .cuerpo .register button{
+    width: 50%;
+    justify-content: center;
+    margin: 0px 50px;
+    border-radius: 5px;
+}
+main section .cuerpo .register button:hover{
+    background-color:#F8E2CF
+}
+
+/*Register*/
+main .register{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .register .log-Red div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+main .register .log-Red div i{
+    margin: 0 10px;
+}
+
+
+main .register .log-Red .facebook{
+    text-align: center;
+    padding: 3px;
+    color: #fff;
+    background-color: blue;
+    border-radius: 5%;
+}
+
+main .register .log-Red .google{
+    text-align: center;
+    padding: 3px;
+    color:#fff;
+    background-color: red;
+    border-radius: 5%;
+}
+main .register .log-Red div .o{
+    text-align: center;
+}
+
+main .register .datos form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;/**/
+    justify-content: center;
+}
+
+main .register .datos div{
+    width: 90%;
+    margin: 2px;
+}
+
+main .register .datos div label{
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+}
+main .next{
+    background-color: red;
+    color: #fff;
+    padding: 3px;
+    border-radius: 5%;
+
+}
+
+/*Product details*/
+
+main article.prod-detail{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px
+}
+
+div.back { 
+    padding:10px 10px;
+}
+
+main article a,
+main article div.cantidad,
+div.back a{
+    text-decoration: none;
+}
+
+div.img-container{
+    position: relative;    
+}
+
+main article .img-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main article .img-sec { 
+    display: none;
+}
+main article .img-sec img,
+main article .img-principal img { 
+    width: 100%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+div.slider-buttons-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 15px ;
+    position: absolute;
+    top: 50%;
+}
+
+
+main article p.nombre-prod {
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+main article div.stars { 
+    display: flex;
+    flex-direction: row;
+}
+
+main article div.stars i { 
+    margin: 0px 3px;
+}
+
+main article div.stars p { 
+    margin: 0px 10px;
+    font-style: italic;
+}
+
+main article p.precio{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+main div.colors a { 
+    padding: 2px 5px;
+}
+main div.colors a i { 
+    transition: all 450ms;
+}
+
+main div.colors a i:hover { 
+    font-size: 25px;
+}
+
+main div.talle { 
+    display: flex;
+    flex-direction: row;
+}
+main div.talle p { 
+    position: absolute;
+    font-size: 10px;
+    top: 25%; 
+    left: 30%;
+}
+main div.talle a{ 
+    position: relative;
+    margin: 0px 5px;
+    padding: 12px 12px;
+    border-radius: 5px;
+    background-color: #ebebeb;
+}
+
+main div.guia { 
+    padding-top: 5px;
+}
+
+main article p.title-recom { 
+    font-size: 20px;
+    font-weight: bold;
+    font-style: oblique;
+    margin-top: 10px;
+    align-self:center ;     
+}
+
+div.Recomendaciones { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+div.Recomendaciones article.deMas {
+    display: none;
+}
+
+div.Recomendaciones article a img{ 
+    width: 100%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+main article p.description { 
+    margin: 10px 0px ;
+}
+
+
+/* carrito 4 */
+main section .paso{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ main section .paso h2{
+     text-align: center ;
+    width: 50px;
+    height: 50px;
+     border-radius: 50%;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border: 1px solid black ;
+     padding-top: 4px;
+ }
+
+ main section .paso .pasoCuatro{
+     background-color: red;
+     color: #fff;
+ }
+
+ main section.det-compra {
+     border: 2px solid black;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     align-items: center;
+     margin: 20px;
+ }
+
+ main section.det-compra:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+ }
+
+ main section.det-compra img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 4%;
+    border-radius: 30%;
+ }
+ main section.det-compra .imagen-prod{
+     display: flex;
+     flex-wrap: nowrap;
+     align-items: center;
+     flex-grow: 1;
+ }
+ main section.det-compra article.detalle-prod{
+    display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     align-items: center;
+ }
+ main section.det-compra form label input{
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     width: 20%;
+
+ }
+
+.total{
+    margin: 25px;
+    text-align: end;
+ }
+
+
+ main article.adress div{
+     margin: 10px;
+     padding: 2px 10px;
+     border: 2px solid black;
+     width: 200px;
+ }
+
+ main article.adress div:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100)
+ }
+
+ main article.adress div.facturacion{
+    width: 230px;
+}
+
+main article.pago div{
+    margin: 10px;
+    padding: 2px 10px;
+    border: 2px solid black;
+    border-top: 5px solid black;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+main article.pago div:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    border-top: 5px solid red;
+}
+
+main article.pago div h3{
+    width: 60%;
+}
+
+main article.pago div i{
+    font-size: 50px;
+    width: 35%;
+}
+
+main article.pago div img{
+    width: 80px;
+}
+
+@media (min-width:370px){
+    .footer-Top .description{
+        flex-direction: row;
+        width: 20%;
+        min-width: 300px;
+    }
+
+
+    .footer-Buttom {
+        min-width: 30%;
+
+    }
+
+    .footer-Buttom{
+        align-self: center;
+    }
+
+
+    .footer-Buttom .newsletter .box{
+        width: 40%;
+    }
+
+    /*REGISTER*/
+
+    main .register .datos form{
+        flex-direction: row;/**/
+    }
+    
+    main .register .datos div{
+        width: 45%;
+        
+    }
+    main .register .datos{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main .register .datos .box{
+        width: 30%;
+    }
+
+    /* Product Detail */
+
+    div.slider-buttons-container{
+        display: none;
+    }
+
+    main article.prod-detail{ 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main article.prod-detail div.product-description { 
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    main article.prod-detail .img-container { 
+        width: 45%;
+    }
+    main article .img-sec,
+    main article .img-principal { 
+        display: flex;
+        margin-bottom: 10px;
+    }
+    main article div.product-description p.nombre-prod{
+        padding-top: 0px;
+    }
+    main article div.product-description div.description p.title { 
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0px 10px 0px 0px ;
+    }
+
+    /*carrito 4*/
+    main section.det-compra{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    main section.det-compra article{
+        margin: 0 5px;
+        width: 30%;
+    }
+    main section.det-compra article.boton{
+        width: 10%;
+        text-align: left;
+    }
+    main section.det-compra .detalle-prod/*,.precio*/{
+        flex-grow: 0.5;
+    }
+
+    main article.adress{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main article.pago{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 700px){
+    
+    .logo{
+        width: 60px;
+    }
+    .header-container .list-container,
+    .header-container .IngresarRegistrarse{
+        display: block;
+    }
+    
+    div.burger-menu{
+        display: none;
+    } 
+
+    div.login-home {
+        position: static;
+    }
+
+    div.login-home a {
+        font-size: 15px;
+        justify-content: flex-end;
+    }
+    div.login-home .IngresarRegistrarse a{
+        font-size: 12px;
+    }
+
+    
+    
+    .footer-Top .description{
+       
+        width: 20%;
+        
+    }
+    
+
+    .holis{
+        text-align: center;
+    }
+    
+    .contenedor-login{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-Buttom article{
+        width: 45%
+    }
+    
+    footer .footer-Buttom .newsletter .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 40, 61);
+    border-radius: 30px;
+    width: 250px;
+    }
+    .footer-Buttom {
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+
+    /*Login*/
+    main section .cuerpo {
+        display: inline-block;
+        margin-left: 80px;
+       
+     }
+     main section .cuerpo .login {
+         
+         float: left;
+         
+     }
+     main section .cuerpo .register{
+         width:300px;
+          height:auto; 
+          float:left;
+           display:inline;
+     }
+      main section .cuerpo .register ul li{
+          margin: 2px;
+      }
+      main section .cuerpo .login{
+         display:inline-block
+      }
+      main section .cuerpo .register{
+         display:inline-block
+      }
+
+      main section .cuerpo article{
+        flex-direction: row;
+        width: 45%;
+    }
+    /*Register*/
+
+    /* Product Detail */
+
+    main article div.img-container {
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    main article div.img-principal,
+    main article div.img-sec{ 
+        width: 45%;
+        margin: 0px;
+        flex-direction: row;
+        align-items: normal;
+    }
+    main article div.img-container img { 
+        width: 100%;
+        box-shadow: none;
+    }
+
+    /*carrito4*/
+    main section.det-compra article.detalle-prod{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    main section.det-compra article.detalle-prod div{
+        width: 30%;
+    }
+    main section.det-compra article.precio{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    main section.det-compra article.precio div{
+        width: 45%;
+    }
+    main section.det-compra article.boton{
+        width: 5%;
+    }
+
+}

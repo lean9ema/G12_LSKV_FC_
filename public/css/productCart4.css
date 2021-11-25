@@ -184,27 +184,59 @@ footer{
 
 
 /* carrito 4 */
+main section h4.title { 
+    display: flex;
+    position: relative;
+    justify-content:center;
+    font-size: 25px;
+    margin: 15px 0px 40px;
+}
+main section h4.title:before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    bottom: 2px;
+    border-bottom: 3px solid red;
+}
+
+
 main section .paso{
-    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    position: relative;
+    align-items: center;
 }
- main section .paso h2{
-     text-align: center ;
+
+main section .paso:before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    bottom: 50%;
+    border-bottom: 3px solid black;
+    z-index: 0;
+}
+ 
+main section .paso h2{
+    text-align: center ;
     width: 50px;
     height: 50px;
-     border-radius: 50%;
-     -moz-border-radius: 50%;
-     -webkit-border-radius: 50%;
-     border: 1px solid black ;
-     padding-top: 4px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 1px solid black ;
+    padding-top: 4px;
+    z-index: 1000;
+    background-color: #fff;
  }
 
  main section .paso .pasoCuatro{
      background-color: red;
      color: #fff;
- }
+ } 
+
+ /*titulo carrito con paso*/
 
  main section.det-compra {
      border: 2px solid black;
@@ -292,6 +324,9 @@ main article.pago div i{
     width: 35%;
 }
 
+main article.pago div img{
+    width: 80px;
+}
 
 
 /* Parte mobile */
