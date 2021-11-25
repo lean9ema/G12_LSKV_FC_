@@ -5,3 +5,5 @@
 * width de 361 a 769 es para mobile. 
 
 * width para mas adelante es para la version desktop. 
+
+

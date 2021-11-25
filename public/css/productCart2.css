@@ -93,7 +93,7 @@ main section{
     align-items: center;
     align-content: center;
 }
-main .cuerpo{
+main .cuerpoCarrito{
     border: 2px solid black;
     margin: 6px;
     text-align: center;
@@ -103,27 +103,31 @@ main .cuerpo{
     flex-wrap: wrap;
    width: 100%;
  }
- main section .cuerpo .login{
+ main section .cuerpoCarrito .login{
      margin: 6px;
  }
+ main section .cuerpoCarrito .login form a{
+     width: 100%;
+     margin: 2px;
+ }
+ main section .cuerpoCarrito .login form button{
+    width: 100%;
+}
+
 
  
 
  
 
 
-main section  .cuerpo .login form label {
+main section  .cuerpoCarrito .login form label {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
 }
-main section .cuerpo .login form {
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-}
-main section .cuerpo .register form label {
+
+main section .cuerpoCarrito .register form label {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,37 +135,39 @@ main section .cuerpo .register form label {
     align-content: center;
     align-items: stretch;
 }
-main section .cuerpo .login form {
+main section .cuerpoCarrito .login form {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    display: grid;  
+}
+main section .cuerpoCarrito .register form {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;  
 }
-main section .cuerpo .register form {
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;  
-}
-main section .cuerpo .login form button{
-    width: 50%;
+main section .cuerpoCarrito .login form button{
+    width:173px ;
     justify-content: center;
     margin: 0px 50px;
     border-radius: 5px;
     
+    
 }
-main section .cuerpo .login form button:hover{
+main section .cuerpoCarrito .login form button:hover{
    
    background-color:#F8E2CF
 }
 
-main section .cuerpo .register button{
-    width: 50%;
+main section .cuerpoCarrito .register button{
+    width: 173px;
     justify-content: center;
     margin: 0px 50px;
     border-radius: 5px;
     margin: 10px;
     
 }
-main section .cuerpo .register button:hover{
+main section .cuerpoCarrito .register button:hover{
     background-color:#F8E2CF
 }
 main section h1.title { 
@@ -179,7 +185,7 @@ main section h1.title:before{
     bottom: 2px;
     border-bottom: 3px solid red;
 }
-main section .cuerpo .register {
+main section .cuerpoCarrito .register {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
@@ -386,32 +392,34 @@ footer{
 @media (min-width: 700px){
     /*Main*/
 
-    main section .cuerpo {
-        display: inline-block;
-        
+    main section .cuerpoCarrito {
+        justify-content: center;
+    display: flex;
+    flex-direction: row;
+        padding: 10px;
        
      }
-     main section .cuerpo .login {
+     main section .cuerpoCarrito .login {
          
          float: left;
          
      }
-     main section .cuerpo .register{
+     main section .cuerpoCarrito .register{
          width:300px;
           height:auto; 
           float:left;
            display:inline;
      }
      
-      main section .cuerpo .login{
+      main section .cuerpoCarrito .login{
          display:inline-block
       }
-      main section .cuerpo .register{
+      main section .cuerpoCarrito .register{
          display:inline-block
       }
      
      
-     main section .cuerpo article{
+     main section .cuerpoCarrito article{
          flex-direction: row;
          width: 45%;
      }
