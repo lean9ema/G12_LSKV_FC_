@@ -540,9 +540,14 @@ main section .paso h2{
     padding-top: 4px;
     z-index: 1000;
     background-color: #fff;
- }
- 
- main section .paso .pasoDos{
+    color: black;
+}
+
+main section .paso a { 
+    z-index: 0;
+}
+
+main section .paso .pasoDos{
     background-color: red;
     color: #fff;
 } 
@@ -623,7 +628,6 @@ main section .cuerpoCarrito .login form button{
     
 }
 main section .cuerpoCarrito .login form button:hover{
-   
    background-color:#F8E2CF
 }
 
@@ -678,7 +682,7 @@ main section div.form form label{
 }
 main section div.form form label select,
 main section div.form form label input { 
-    width: 100%;
+    width: 90%;
 }
 
 main div.bEnv  { 
