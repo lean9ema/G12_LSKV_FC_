@@ -206,6 +206,11 @@ main section{
     align-items: center;
     align-content: center;
 }
+main section.cuerpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 main section .cuerpo{
     margin: 6px;
     text-align: center;
