@@ -186,6 +186,7 @@ footer{
     margin: 0 20px;
     padding: 15px;
     margin: 0 15px;
+    text-align: center;
 }
 
 .footer-Buttom .info div ul{
@@ -493,28 +494,208 @@ main article p.description {
 }
 
 
-/* carrito 4 */
+/* Product car *//*titulo carrito con paso*/
+main section h4.title { 
+    display: flex;
+    position: relative;
+    justify-content:center;
+    font-size: 25px;
+    margin: 15px 0px 40px;
+}
+main section h4.title:before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    bottom: 2px;
+    border-bottom: 3px solid red;
+}
+
+
 main section .paso{
-    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    position: relative;
+    align-items: center;
 }
- main section .paso h2{
-     text-align: center ;
+
+main section .paso:before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    bottom: 50%;
+    border-bottom: 3px solid black;
+    z-index: 0;
+}
+ 
+main section .paso h2{
+    text-align: center ;
     width: 50px;
     height: 50px;
-     border-radius: 50%;
-     -moz-border-radius: 50%;
-     -webkit-border-radius: 50%;
-     border: 1px solid black ;
-     padding-top: 4px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 1px solid black ;
+    padding-top: 4px;
+    z-index: 1000;
+    background-color: #fff;
  }
+ 
+ main section .paso .pasoDos{
+    background-color: red;
+    color: #fff;
+} 
+
+ main section .paso .pasoTres{
+    background-color: red;
+    color: #fff;
+} 
 
  main section .paso .pasoCuatro{
      background-color: red;
      color: #fff;
+ } 
+
+ /*ProductCar 1*/
+ 
+ /*ProductCar 2*/
+
+ main .cuerpoCarrito{
+    border: 2px solid black;
+    margin: 6px;
+    text-align: center;
+   justify-content: center;
+   display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   width: 100%;
  }
+ main section .cuerpoCarrito .login{
+     margin: 6px;
+ }
+ main section .cuerpoCarrito .login form a{
+     width: 100%;
+     margin: 2px;
+ }
+ main section .cuerpoCarrito .login form button{
+    width: 100%;
+}
+
+
+ 
+
+ 
+
+
+main section  .cuerpoCarrito .login form label {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main section .cuerpoCarrito .register form label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+}
+main section .cuerpoCarrito .login form {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    display: grid;  
+}
+main section .cuerpoCarrito .register form {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;  
+}
+main section .cuerpoCarrito .login form button{
+    width:173px ;
+    justify-content: center;
+    margin: 0px 50px;
+    border-radius: 5px;
+    
+    
+}
+main section .cuerpoCarrito .login form button:hover{
+   
+   background-color:#F8E2CF
+}
+
+main section .cuerpoCarrito .register button{
+    width: 173px;
+    justify-content: center;
+    margin: 0px 50px;
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+main section .cuerpoCarrito .register button:hover{
+    background-color:#F8E2CF
+}
+main section h1.title { 
+    display: flex;
+    position: relative;
+    justify-content:center;
+    font-size: 25px;
+    margin: 15px 0px 40px;
+}
+
+main section .cuerpoCarrito .register {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+ /*ProductCar 3*/
+
+ main section p.description { 
+    display: flex;
+    text-decoration:underline black;
+    font-size: 25px;
+    justify-content: center;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
+main section div.form { 
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    justify-content: space-around;
+}
+
+main section div.form form label{ 
+    display: flex;
+    flex-direction: column;
+    padding: 7px 0px ;
+}
+main section div.form form label select,
+main section div.form form label input { 
+    width: 100%;
+}
+
+main div.bEnv  { 
+    display: flex;
+    justify-content: center;
+}
+
+main div button { 
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+}
+
+ /*ProductCar 4*/
 
  main section.det-compra {
      border: 2px solid black;
@@ -608,8 +789,7 @@ main article.pago div img{
 
 @media (min-width:370px){
     .footer-Top .description{
-        flex-direction: row;
-        width: 20%;
+        width: 45%;
         min-width: 300px;
     }
 
@@ -741,9 +921,7 @@ main article.pago div img{
     
     
     .footer-Top .description{
-       
         width: 20%;
-        
     }
     
 
@@ -832,7 +1010,46 @@ main article.pago div img{
         box-shadow: none;
     }
 
-    /*carrito4*/
+    /*Product car*/
+    /*Product car2*/
+
+    main section .cuerpoCarrito {
+        justify-content: center;
+    display: flex;
+    flex-direction: row;
+        padding: 10px;
+       
+     }
+     main section .cuerpoCarrito .login {
+         
+         float: left;
+         
+     }
+     main section .cuerpoCarrito .register{
+         width:300px;
+          height:auto; 
+          float:left;
+           display:inline;
+     }
+     
+      main section .cuerpoCarrito .login{
+         display:inline-block
+      }
+      main section .cuerpoCarrito .register{
+         display:inline-block
+      }
+     
+     
+     main section .cuerpoCarrito article{
+         flex-direction: row;
+         width: 45%;
+     }
+
+    /*Product car3*/
+    main section div.form{
+        flex-direction: row;
+    }
+    /*Product car4*/
     main section.det-compra article.detalle-prod{
         flex-direction: row;
         justify-content: space-between;
