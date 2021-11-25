@@ -83,7 +83,7 @@ h2{
 h5{
     text-align: center;
 }
-
+/*Main*/
 main{
   
     border: 2px solid black;
@@ -306,6 +306,7 @@ footer{
     div.login-home .IngresarRegistrarse a{
         font-size: 12px;
     }
+    /*Main*/
     main section .cuerpo {
        display: inline-block;
        margin-left: 80px;
@@ -332,11 +333,7 @@ footer{
         display:inline-block
      }
     
-    .footer-Top .description{
-       
-        width: 20%;
-        
-    }
+    
     main section .cuerpo article{
         flex-direction: row;
         width: 45%;
@@ -349,6 +346,12 @@ footer{
     .contenedor-login{
         display: flex;
         justify-content: space-between;
+    }
+    /*Footer*/
+    .footer-Top .description{
+       
+        width: 20%;
+        
     }
 
     .footer-Buttom article{
