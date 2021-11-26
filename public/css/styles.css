@@ -616,14 +616,15 @@ main section .paso .pasoDos{
 
  main .cuerpoCarrito{
     text-align: center;
-   justify-content: center;
-   display: flex;
+    justify-content: space-around;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-   width: 100%;
+    width: 100%;
  }
  main section .cuerpoCarrito .login{
-     margin: 6px;
+    margin: 5px;
+    min-width: 300px;
  }
  main section .cuerpoCarrito .login form a{
      width: 100%;
@@ -1078,22 +1079,19 @@ main article.pago div img{
     /*Product car2*/
 
     main section .cuerpoCarrito {
-        justify-content: center;
-    display: flex;
-    flex-direction: row;
+        display: flex;
+        flex-direction: row;
         padding: 10px;
-       
      }
      main section .cuerpoCarrito .login {
-         
          float: left;
          
      }
      main section .cuerpoCarrito .register{
-         width:300px;
-          height:auto; 
-          float:left;
-           display:inline;
+        width:300px;
+        height:auto; 
+        float:left;
+        display:inline;
      }
      
       main section .cuerpoCarrito .login{
@@ -1106,7 +1104,6 @@ main article.pago div img{
      
      main section .cuerpoCarrito article{
          flex-direction: row;
-         width: 45%;
      }
 
     /*Product car3*/
