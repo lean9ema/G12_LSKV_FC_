@@ -593,8 +593,6 @@ main section .paso .pasoDos{
  /*ProductCar 2*/
 
  main .cuerpoCarrito{
-    border: 2px solid black;
-    margin: 6px;
     text-align: center;
    justify-content: center;
    display: flex;
@@ -716,7 +714,7 @@ main div.bEnv  {
     justify-content: center;
 }
 
-main div button { 
+main div.bEnv button { 
     font-size: 20px;
     color: white;
     background-color: red;
