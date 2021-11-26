@@ -31,6 +31,28 @@ div.IngresarRegistrarse a{
 }
 
 
+div.IngresarRegistrarse,
+div.list-container { 
+    display: none;
+}
+
+.list-home {
+    list-style: none;
+    display: flex;
+}
+div.IngresarRegistrarse a{
+    font-size: 12px;
+}
+
+.list-home li{
+    padding: 20px 14px;
+    font-size: 12px;
+}
+
+.list-home li a {
+    text-decoration: none;
+    padding: 5px;
+}
 
 .header-container {
     width: 100%;
@@ -75,12 +97,6 @@ div.login-home {
     display: flex;
     justify-content: flex-end;
     right: 2vw;
-}
-h2{
-    text-align: center;
-}
-h5{
-    text-align: center;
 }
 
 header nav .header-container div{
@@ -822,8 +838,23 @@ main article.pago div img{
     width: 80px;
 }
 
-@media (min-width:380px){
+@media (min-width:370px){
 
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+        width: 11vw;
+    }
+
+    div.burger-menu {
+        left : 15vw;
+    }
+
+    div.burger-menu a,
+    div.login-home a {
+        font-size: 5vw;
+    }
+    
     .footer-Top .description { 
         width: 35%;
     }
@@ -928,7 +959,7 @@ main article.pago div img{
 @media (min-width: 700px){
     
     .logo{
-        width: 60px;
+        width: 50px;
     }
     .header-container .list-container,
     .header-container .IngresarRegistrarse{
@@ -937,7 +968,7 @@ main article.pago div img{
     
     div.burger-menu{
         display: none;
-    } 
+    }
 
     div.login-home {
         position: static;
@@ -1034,7 +1065,7 @@ main article.pago div img{
         align-items: normal;
     }
     main article div.img-container img { 
-        width: 100%;
+        box-shadow: 0px 0px white;        
     }
     main  div.Recomendaciones article.deMas { 
         display: block;
