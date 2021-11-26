@@ -83,8 +83,8 @@ h5{
     text-align: center;
 }
 
-header nav .header-container div a{/*Color de fuente */
-    color: black;
+header nav .header-container div{
+    color: #BA135D;
 }
 
 /* FOOTER */
