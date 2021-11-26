@@ -95,22 +95,18 @@ footer{
 .footer-Top{
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
     justify-content: center;
-    min-width: 250px;
-    
+    margin-bottom: 10px;
 }
 
 .footer-Top .description{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     margin: 0 10px;
-    align-items: left;
-    width: 100%;
     align-items: center;
-    justify-content: center;
 }
+
+.footer-Top article.description p,
 .footer-Top .description h4{
     text-align: center;
 }
@@ -125,66 +121,79 @@ footer{
 
 .footer-Buttom{
     display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 200px;
     border-top: 1px solid black;
     background-color: #FCD8D4;
-    color: white
-    
+    color: white;
+    flex-direction: column;
 }
 
-.footer-Buttom article{
-    width: 58%;
+.footer-Buttom article.newsletter h4,
+.footer-Buttom article.red div.icon,
+.footer-Buttom article.red h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.footer-Buttom article.red div.icon { 
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-Buttom article.red div.icon i { 
+    font-size: 30px;
+    margin: 0 5px;
 }
 
 .footer-Buttom .red{
     margin: 10px;
+}
+
+.footer-Buttom article.newsletter { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px;
 }
 
-.footer-Buttom .red .icon{
-    display: flex;
-    flex-wrap: wrap;
+.footer-Buttom article.newsletter h4 {
+    text-align: center;
+    font-size: 19px;
 }
 
-.footer-Buttom .red .icon i{
-    margin: 0 5px;
-    font-size: 50px;
-}
-
-.footer-Buttom .newsletter{
-    margin: 0 20px;
-    padding: 15px;
-    margin: 0 15px;
-}
 
 .footer-Buttom .newsletter .box{ 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    align-self: center;
+    flex-direction: row;
     background-color: rgb(48, 40, 61);
     border-radius: 10px;
-    width: 211px;
+    width: 220px;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
-.footer-Buttom .newsletter .box i{
+.footer-Buttom .newsletter div.box i{
+    display: flex;
     font-size: 30px;
     margin: 0 10px;
     color: #fff;
 }
 
-.footer-Buttom .newsletter .box .input{
+.footer-Buttom .newsletter div.box input{
+    display: flex;
     background-color: #fff;
     color: lightgray;
+    border-radius: 10px;
+    margin: 0 10px;
+    width: 140px;
 }
 
 .footer-Buttom .info{
-    margin: 0 20px;
-    padding: 15px;
-    margin: 0 15px;
+    padding: 10px 5px;
+}
+.footer-Buttom .info div ul li,
+.footer-Buttom .info h4 { 
     text-align: center;
 }
 
@@ -809,15 +818,13 @@ main article.pago div img{
 }
 
 @media (min-width:380px){
-    .footer-Top .description{
-        width: 45%;
-        min-width: 300px;
-    }
 
+    .footer-Top .description { 
+        width: 35%;
+    }
 
     .footer-Buttom {
         min-width: 30%;
-
     }
 
     .footer-Buttom{
@@ -826,7 +833,7 @@ main article.pago div img{
 
 
     .footer-Buttom .newsletter .box{
-        width: 40%;
+        width: 220px;
     }
 
     /*REGISTER*/
@@ -939,12 +946,13 @@ main article.pago div img{
         font-size: 12px;
     }
 
-    
-    
-    .footer-Top .description{
-        width: 20%;
+    /* Footer */
+    .footer-Top { 
+        flex-wrap: nowrap;
     }
-    
+    .footer-Top .description{
+        width: 25%;
+     }
 
     .holis{
         text-align: center;
@@ -955,29 +963,22 @@ main article.pago div img{
         justify-content: space-between;
     }
 
-    .footer-Buttom article{
-        width: 45%
-    }
-    
-    footer .footer-Buttom .newsletter .box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(48, 40, 61);
-    border-radius: 30px;
-    width: 250px;
-    }
     .footer-Buttom {
-        flex-wrap: nowrap;
         display: flex;
         flex-direction: row;
         align-content: center;
         justify-content: center;
         align-items: flex-start;
-
     }
 
+    .footer-Buttom article{
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
     /*Login*/
     main section .cuerpo {
         margin-left: 80px;
