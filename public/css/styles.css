@@ -572,6 +572,10 @@ main section .paso h2{
 main section .paso a { 
     z-index: 0;
 }
+main section .paso .pasoUno{
+    background-color: red;
+    color: #fff;
+} 
 
 main section .paso .pasoDos{
     background-color: red;
@@ -721,6 +725,7 @@ main div.bEnv button {
     border-radius: 10px;
     width: 100px;
     height: 50px;
+    padding: 2px;
 }
 
  /*ProductCar 4*/
