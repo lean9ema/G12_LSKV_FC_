@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+header nav {
+    max-width: 900px;
+}
+
 nav{
     width: 100%;
 }
@@ -53,10 +57,14 @@ div.IngresarRegistrarse a{
     text-decoration: none;
     padding: 5px;
 }
-
-.header-container {
-    width: 100%;
+header { 
     background-color: #F8E2CF;
+    display: flex;
+    justify-content: center;
+}
+.header-container {
+    display: flex;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -145,21 +153,21 @@ section div .btn-popu button{
     color: #666;
 }
 
-/* Main */
+/* Main */ 
 
-main section article{
+main.home section article{
     background-color: #FFF;
     
 }
-main section article div{
+main.home section article div{
     position: relative;
 }
 
-main section article img{
+main.home section article img{
     width: 100%;
 }
 
-main{
+main.home{
     width: 90%;
     padding: 40px;
     margin: auto;
@@ -297,33 +305,26 @@ footer{
 }
 
 /*Login*/
-main{
-  
+main.class_login{
     border: 2px solid black;
     margin: 4px;
     padding: 4px;
-    
-    
 }
-main section{
-    align-items: center;
-    align-content: center;
-}
-main section.cuerpo{
+
+main.class_login section{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
 }
+
 main section .cuerpo{
     margin: 6px;
     text-align: center;
-   justify-content: center;
-   display: flex;
+    justify-content: space-between;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-   width: 100%;
- }
-
+}
 
 main section  .cuerpo .login form label {
     display: flex;
@@ -331,13 +332,14 @@ main section  .cuerpo .login form label {
     flex-direction: column;
     justify-content: center;
 }
-main section  .cuerpo .register {
+
+main section .cuerpo .login,
+main section .cuerpo .register {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     margin: 10px;
 }
-
 
 main section .cuerpo .login .log-Red{
 margin: 4px;
@@ -607,10 +609,9 @@ div.Recomendaciones article a img{
 div.Recomendaciones article:hover { 
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
-main article p { 
+main article.prod-detail p { 
     margin: 0px 10px;
 }
-
 
 /* Product car *//*titulo carrito con paso*/
 main section h4.title { 
@@ -970,6 +971,8 @@ main article.pago div img{
     main .register .datos{
         flex-direction: row;
         justify-content: center;
+        max-width: 700px;
+        margin: 20px;
     }
 
     main .register .datos .box{
@@ -1101,12 +1104,11 @@ main article.pago div img{
     
     
     /*Login*/
-    main section .cuerpo {
-        margin-left: 80px;
+    main.class_login section .cuerpo {
         max-width: 1400px;
         flex-direction: row;
-       
      }
+
      main section .cuerpo .login {
          
          float: left;
