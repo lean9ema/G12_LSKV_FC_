@@ -5,10 +5,10 @@
     box-sizing: border-box;
 }
 
+/********************* Header *********************/
 nav{
     width: 100%;
 }
-/********************* Header *********************/
 
 div.IngresarRegistrarse,
 div.list-container { 
@@ -32,8 +32,6 @@ div.IngresarRegistrarse a{
     text-decoration: none;
     padding: 5px;
 }
-
-
 
 .header-container {
     width: 100%;
@@ -80,10 +78,82 @@ div.login-home {
     right: 2vw;
 }
 
-/********************* Carrusel *********************/
-main section div img.fuck-img{
+/********************* Banner *********************/
+
+.banner{
     width: 100%;
-    margin: 0px auto;
+}
+
+section div .img-banner{
+    width: 100%;
+}
+
+/********************* Populares *********************/
+
+.populares{
+    width: 100%;
+    display: flex;
+    margin-top: 3%;
+}
+
+section .popular-now{
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section div .tittle-popu{
+    font-size: 3em;
+}
+
+section div .btn-popu button{
+    font-size: 20px;
+    padding: 10px 35px;
+    margin: 10px;
+}
+
+/********************* Main *********************/
+
+.products{
+    margin-top: 1%;
+}
+
+.description{
+    text-align: center;
+    color: #666;
+}
+
+main section article{
+    background-color: #FFF;
+    
+}
+main section article div{
+    position: relative;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    padding: 40px;
+    margin: auto;
+}
+
+.products article{
+    margin: 10px;
+}
+
+.main-article{
+    border: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+.estilos-productos{
+    text-align: center;
+    font-size: 3em;
+    margin: 3% 0%;
 }
 
 /********************* Footer *********************/
@@ -91,7 +161,6 @@ footer{
     border: 2px solid black;
     margin: 20px;
 }
-
 
 .footer-Top{
     display: flex;
@@ -114,6 +183,7 @@ footer{
     margin: 0 5px;
     font-size: 40px;
 }
+
 .footer-Top .description .icon-des p{
     font-size: 8px;
 }
@@ -154,7 +224,7 @@ footer{
     margin: 0 15px;
 }
 
-.footer-Buttom .newsletter .box{ /*Revisar pq el icono no se pone al lado del input*/
+.footer-Buttom .newsletter .box{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -185,6 +255,7 @@ footer{
     list-style: none;
 }
 
+
 /********************* Medias Mobile *********************/
 @media (min-width: 370px)  {
     .logo{
@@ -202,6 +273,15 @@ footer{
         font-size: 5vw;
     }
 
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .products article{
+        width: 45%;
+    }
+
     /* Footer */
     .footer-Top .description{
         flex-direction: row;
@@ -213,19 +293,8 @@ footer{
         width: 45%
     }
 
+    
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /********************* Medias Escritorio *********************/
@@ -254,4 +323,12 @@ footer{
         font-size: 12px;
     }
 
+    .products article{
+        width: 20%;
+    }
+
+    .products article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
 }
