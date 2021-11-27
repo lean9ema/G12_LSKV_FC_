@@ -473,9 +473,6 @@ main div.colors {
 main div.colors a { 
     padding: 2px 5px;
 }
-main div.colors a i { 
-    transition: all 450ms;
-}
 
 main div.colors a i:hover { 
     font-size: 25px;
