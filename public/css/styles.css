@@ -1,6 +1,5 @@
 * {
-    margin: 0px 1px;
-    
+    margin: 0px ;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
@@ -32,6 +31,28 @@ div.IngresarRegistrarse a{
 }
 
 
+div.IngresarRegistrarse,
+div.list-container { 
+    display: none;
+}
+
+.list-home {
+    list-style: none;
+    display: flex;
+}
+div.IngresarRegistrarse a{
+    font-size: 12px;
+}
+
+.list-home li{
+    padding: 20px 14px;
+    font-size: 12px;
+}
+
+.list-home li a {
+    text-decoration: none;
+    padding: 5px;
+}
 
 .header-container {
     width: 100%;
@@ -77,14 +98,10 @@ div.login-home {
     justify-content: flex-end;
     right: 2vw;
 }
-h2{
-    text-align: center;
-}
-h5{
-    text-align: center;
-}
 
-
+header nav .header-container div a{
+    color: #BA135D;
+}
 
 /* FOOTER */
 
@@ -96,22 +113,18 @@ footer{
 .footer-Top{
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
     justify-content: center;
-    min-width: 250px;
-    
+    margin-bottom: 10px;
 }
 
 .footer-Top .description{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     margin: 0 10px;
-    align-items: left;
-    width: 100%;
     align-items: center;
-    justify-content: center;
 }
+
+.footer-Top article.description p,
 .footer-Top .description h4{
     text-align: center;
 }
@@ -126,66 +139,79 @@ footer{
 
 .footer-Buttom{
     display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 200px;
     border-top: 1px solid black;
     background-color: #FCD8D4;
-    color: white
-    
+    color: white;
+    flex-direction: column;
 }
 
-.footer-Buttom article{
-    width: 58%;
+.footer-Buttom article.newsletter h4,
+.footer-Buttom article.red div.icon,
+.footer-Buttom article.red h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.footer-Buttom article.red div.icon { 
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-Buttom article.red div.icon i { 
+    font-size: 30px;
+    margin: 0 5px;
 }
 
 .footer-Buttom .red{
     margin: 10px;
+}
+
+.footer-Buttom article.newsletter { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px;
 }
 
-.footer-Buttom .red .icon{
-    display: flex;
-    flex-wrap: wrap;
+.footer-Buttom article.newsletter h4 {
+    text-align: center;
+    font-size: 19px;
 }
 
-.footer-Buttom .red .icon i{
-    margin: 0 5px;
-    font-size: 50px;
-}
-
-.footer-Buttom .newsletter{
-    margin: 0 20px;
-    padding: 15px;
-    margin: 0 15px;
-}
 
 .footer-Buttom .newsletter .box{ 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    align-self: center;
+    flex-direction: row;
     background-color: rgb(48, 40, 61);
     border-radius: 10px;
-    width: 211px;
+    width: 220px;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
-.footer-Buttom .newsletter .box i{
+.footer-Buttom .newsletter div.box i{
+    display: flex;
     font-size: 30px;
     margin: 0 10px;
     color: #fff;
 }
 
-.footer-Buttom .newsletter .box .input{
+.footer-Buttom .newsletter div.box input{
+    display: flex;
     background-color: #fff;
     color: lightgray;
+    border-radius: 10px;
+    margin: 0 10px;
+    width: 140px;
 }
 
 .footer-Buttom .info{
-    margin: 0 20px;
-    padding: 15px;
-    margin: 0 15px;
+    padding: 10px 5px;
+}
+.footer-Buttom .info div ul li,
+.footer-Buttom .info h4 { 
     text-align: center;
 }
 
@@ -205,6 +231,11 @@ main{
 main section{
     align-items: center;
     align-content: center;
+}
+main section.cuerpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 main section .cuerpo{
     margin: 6px;
@@ -359,7 +390,7 @@ main .next{
 
 }
 
-/*Product details*/
+/* Product Detail */
 
 main article.prod-detail{
     display: flex;
@@ -400,35 +431,43 @@ div.slider-buttons-container{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 0px 15px ;
+    padding: 0px 10px ;
     position: absolute;
     top: 50%;
 }
 
 
 main article p.nombre-prod {
-    padding-top: 10px;
-    font-size: 22px;
+    padding: 10px 0px 5px 0px;
+    font-size: 20px;
     font-weight: bold;
 }
 
-main article div.stars { 
+main article.prod-detail div.stars { 
     display: flex;
     flex-direction: row;
+    padding: 0px 0px 5px 5px;
 }
-
-main article div.stars i { 
-    margin: 0px 3px;
+main article div.stars div.score { 
+    display: flex;
+}
+main article div.stars div.score i { 
+    margin: 0px 1px;
 }
 
 main article div.stars p { 
     margin: 0px 10px;
     font-style: italic;
+    font-size: 12px;
 }
 
 main article p.precio{
     font-size: 1.25rem;
     font-weight: bold;
+}
+
+main div.colors { 
+    padding: 2px;    
 }
 
 main div.colors a { 
@@ -442,55 +481,60 @@ main div.colors a i:hover {
     font-size: 25px;
 }
 
-main div.talle { 
-    display: flex;
-    flex-direction: row;
+main article.prod-detail div.talle { 
+    margin: 2px 0px;
 }
+
 main div.talle p { 
     position: absolute;
     font-size: 10px;
-    top: 25%; 
-    left: 30%;
+    top: 26%; 
+    left: 0%;
 }
 main div.talle a{ 
     position: relative;
     margin: 0px 5px;
-    padding: 12px 12px;
+    padding: 3px 14px;
     border-radius: 5px;
     background-color: #ebebeb;
+
 }
 
 main div.guia { 
     padding-top: 5px;
 }
 
-main article p.title-recom { 
+main p.title-recom { 
+    display: flex;
     font-size: 20px;
     font-weight: bold;
     font-style: oblique;
-    margin-top: 10px;
-    align-self:center ;     
+    margin-top: 20px;
+    justify-content: center;
 }
 
 div.Recomendaciones { 
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-around;
     margin: 30px 0px;
 }
-
+div.Recomendaciones article { 
+    width: 25%;
+}
 div.Recomendaciones article.deMas {
     display: none;
 }
 
 div.Recomendaciones article a img{ 
     width: 100%;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
-
-main article p.description { 
-    margin: 10px 0px ;
+div.Recomendaciones article:hover { 
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+main article p { 
+    margin: 0px 10px;
 }
 
 
@@ -540,9 +584,18 @@ main section .paso h2{
     padding-top: 4px;
     z-index: 1000;
     background-color: #fff;
- }
- 
- main section .paso .pasoDos{
+    color: black;
+}
+
+main section .paso a { 
+    z-index: 0;
+}
+main section .paso .pasoUno{
+    background-color: red;
+    color: #fff;
+} 
+
+main section .paso .pasoDos{
     background-color: red;
     color: #fff;
 } 
@@ -562,17 +615,16 @@ main section .paso h2{
  /*ProductCar 2*/
 
  main .cuerpoCarrito{
-    border: 2px solid black;
-    margin: 6px;
     text-align: center;
-   justify-content: center;
-   display: flex;
+    justify-content: space-around;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-   width: 100%;
+    width: 100%;
  }
  main section .cuerpoCarrito .login{
-     margin: 6px;
+    margin: 5px;
+    min-width: 300px;
  }
  main section .cuerpoCarrito .login form a{
      width: 100%;
@@ -623,7 +675,6 @@ main section .cuerpoCarrito .login form button{
     
 }
 main section .cuerpoCarrito .login form button:hover{
-   
    background-color:#F8E2CF
 }
 
@@ -678,7 +729,7 @@ main section div.form form label{
 }
 main section div.form form label select,
 main section div.form form label input { 
-    width: 100%;
+    width: 90%;
 }
 
 main div.bEnv  { 
@@ -686,13 +737,14 @@ main div.bEnv  {
     justify-content: center;
 }
 
-main div button { 
+main div.bEnv button { 
     font-size: 20px;
     color: white;
     background-color: red;
     border-radius: 10px;
     width: 100px;
     height: 50px;
+    padding: 2px;
 }
 
  /*ProductCar 4*/
@@ -737,8 +789,8 @@ main div button {
 
  }
 
-.total{
-    margin: 25px;
+.total h5{
+    margin: 20px;
     text-align: end;
  }
 
@@ -788,15 +840,28 @@ main article.pago div img{
 }
 
 @media (min-width:370px){
-    .footer-Top .description{
-        width: 45%;
-        min-width: 300px;
+
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+        width: 11vw;
     }
 
+    div.burger-menu {
+        left : 15vw;
+    }
+
+    div.burger-menu a,
+    div.login-home a {
+        font-size: 5vw;
+    }
+    
+    .footer-Top .description { 
+        width: 35%;
+    }
 
     .footer-Buttom {
         min-width: 30%;
-
     }
 
     .footer-Buttom{
@@ -805,7 +870,7 @@ main article.pago div img{
 
 
     .footer-Buttom .newsletter .box{
-        width: 40%;
+        width: 220px;
     }
 
     /*REGISTER*/
@@ -840,7 +905,7 @@ main article.pago div img{
         justify-content: space-between;
     }
 
-    main article.prod-detail div.product-description { 
+     article.prod-detail div.product-description { 
         display: flex;
         flex-direction: column;
         width: 50%;
@@ -895,7 +960,7 @@ main article.pago div img{
 @media (min-width: 700px){
     
     .logo{
-        width: 60px;
+        width: 50px;
     }
     .header-container .list-container,
     .header-container .IngresarRegistrarse{
@@ -904,7 +969,7 @@ main article.pago div img{
     
     div.burger-menu{
         display: none;
-    } 
+    }
 
     div.login-home {
         position: static;
@@ -918,12 +983,13 @@ main article.pago div img{
         font-size: 12px;
     }
 
-    
-    
-    .footer-Top .description{
-        width: 20%;
+    /* Footer */
+    .footer-Top { 
+        flex-wrap: nowrap;
     }
-    
+    .footer-Top .description{
+        width: 25%;
+     }
 
     .holis{
         text-align: center;
@@ -934,33 +1000,27 @@ main article.pago div img{
         justify-content: space-between;
     }
 
-    .footer-Buttom article{
-        width: 45%
-    }
-    
-    footer .footer-Buttom .newsletter .box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(48, 40, 61);
-    border-radius: 30px;
-    width: 250px;
-    }
     .footer-Buttom {
-        flex-wrap: nowrap;
         display: flex;
         flex-direction: row;
         align-content: center;
         justify-content: center;
         align-items: flex-start;
-
     }
 
+    .footer-Buttom article{
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
     /*Login*/
     main section .cuerpo {
-        display: inline-block;
         margin-left: 80px;
+        max-width: 1400px;
+        flex-direction: row;
        
      }
      main section .cuerpo .login {
@@ -1006,30 +1066,32 @@ main article.pago div img{
         align-items: normal;
     }
     main article div.img-container img { 
-        width: 100%;
-        box-shadow: none;
+        box-shadow: 0px 0px white;        
+    }
+    main  div.Recomendaciones article.deMas { 
+        display: block;
+    }
+    main div.Recomendaciones article { 
+        width: 190px;
     }
 
     /*Product car*/
     /*Product car2*/
 
     main section .cuerpoCarrito {
-        justify-content: center;
-    display: flex;
-    flex-direction: row;
+        display: flex;
+        flex-direction: row;
         padding: 10px;
-       
      }
      main section .cuerpoCarrito .login {
-         
          float: left;
          
      }
      main section .cuerpoCarrito .register{
-         width:300px;
-          height:auto; 
-          float:left;
-           display:inline;
+        width:300px;
+        height:auto; 
+        float:left;
+        display:inline;
      }
      
       main section .cuerpoCarrito .login{
@@ -1042,7 +1104,6 @@ main article.pago div img{
      
      main section .cuerpoCarrito article{
          flex-direction: row;
-         width: 45%;
      }
 
     /*Product car3*/

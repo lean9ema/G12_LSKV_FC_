@@ -6,13 +6,22 @@
 
 * width para mas adelante es para la version desktop. 
 
-*Start Doing: Crear un chat sopport, redireccionar los botonos y hacerlos funcionales.
+*RETROSPECTIVA*
 
-*More of: Los colores, la tipografia y los tamaños, barra de los numeros
+(cosas nuevas para probar)
+*Start Doing: Coordinar dias fijos para reuniones semanalmente en meet para comprabar como avanzamos y la ayudar si tenemos dificultades
+       
 
-*Keep Doing :El header, el main y el logo
+(cosas para mejorar)
+More of: Organizarnos mejoras al designarnos tareas y la organizacion de tiempo
 
-*Less of: El tamaño de letra
 
-*Stop Doing: Nada
+(cosas que queden igual)
+*Keep Doing: La disposicion de los grupos, la comunicacion y la ayuda entre todos si estamos atrasados
+
+
+(darle segunda oportunidad)
+*Less of: Hacer reuniones en cualquier momento   
+(eliminarlas)
+*Stop Doing:  Designarnos tareas nosotros mismo sin tener un vista objetiva de nuestras fortalezas y disponibilidad de tiempo para hacerlo 
 

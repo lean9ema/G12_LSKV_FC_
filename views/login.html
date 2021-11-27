@@ -25,16 +25,16 @@
             <div class="header-container">
 
                 <div class="logo-container">
-                    <img src="images/Logo4.svg" alt="logo de LSKV" class="logo">
+                    <a href="/"><img src="images/Logo4.svg" alt="logo de LSKV" class="logo"></a>
                 </div>
 
                 <div class = "list-container">
                     <ul class="list-home">
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="#">Locales</a></li>
-                        <li><a href="#">Promos y Cuotas</a></li>
-                        <li><a href="#">Empresa</a></li>
-                        <li><a href="#">Contacto</a></li>
+                           <li><a href="/productDetail">Productos</a></li>
+                         <li><a href="#">Locales</a></li>
+                         <li><a href="#">Promos y Cuotas</a></li>
+                         <li><a href="#">Empresa</a></li>
+                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </div>
                 
@@ -44,12 +44,13 @@
 
                 <div class="login-home">
                     <a href="#"><i class="fas fa-search"></i></a>
-                    <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                    <a href="/productCart"><i class="fas fa-shopping-bag"></i></a>
                     <a href="#"><i class="fas fa-user"></i></a>
-                </div>
-
-                <div class = "IngresarRegistrarse">
-                    <a href="#">Ingresar / Registrarse</a>
+                    <div class = "IngresarRegistrarse">
+                         <a href="/login">Ingresar</a>
+                          /
+                         <a href="/register">Registrarse</a>
+                    </div>
                 </div>
 
             </div>
@@ -145,71 +146,79 @@
       
        </section>
  </main>
-    <footer>
-        <section class="footer-Top">
+ <footer>
+    <section class="footer-Top">
 
-            <article class="description">
-                <div class="icon-des"><i class="fas fa-truck"></i></div>
-                <div>
-                    <h4>ENVIO GRATIS</h4>
-                    <p>En compras superiores de $5000</p>
-                </div>
-            </article>
-            <article class="description">
-                <div class="icon-des"><i class="fas fa-credit-card"></i></div>
-                <div>
-                    <h4>CUOTAS SIN INTERES</h4>
-                    <p>Ver promociones bancarias</p>
-                </div>
-            </article>
-            <article class="description">
-                <div class="icon-des"><i class="fas fa-exchange-alt"></i></div>
-                <div>
-                    <h4>1° CAMBIO GRATIS</h4>
-                    <p>Dentro de los 30 dias</p>
-                </div>
-            </article>
-            <article class="description">
-                <div class="icon-des"><i class="fas fa-headset"></i></div>
-                <div>
-                    <h4><i class="fas fa-phone-alt"></i> 11-xxxx-xxxx</h4>
-                    <p>Lunes a viernes de 9:00 a 18:00 hs</p>
-                </div>
-            </article>
+        <article class="description">
+            <div class="icon-des"><i class="fas fa-truck"></i></div>
+            <div>
+                <h4>ENVIO GRATIS</h4>
+                <p>En compras superiores de $5000</p>
+            </div>
+        </article>
 
-        </section>
-        <section class="footer-Buttom">
-            <article class="red">
-                <h4>SIGUENOS EN:</h4>
-                <div class="icon">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-pinterest"></i>
-                    <i class="fab fa-twitter"></i>
-                </div>
-            </article>
-            <article class="newsletter">
-                <h4>SUSCRIBETE A NUESTRO Newsleter:</h4>
-                <div class="box">
-                    <i class="fas fa-newspaper"></i>
-                    <div class="input">Dirección de email</div>
-                </div>
-            </article>
-            <article class="info">
-                <h4>Todos los derechos reservados</h4>
-                <div>
-                <ul>
-                    <li>Locales</li>
-                    <li>Informacion legal</li>
-                    <li>Mayoristas</li>
-                    <li>Blablabla</li>
-                </ol>
-                </div>
-            </article>
+        <article class="description">
+            <div class="icon-des"><i class="fas fa-credit-card"></i></div>
+            <div>
+                <h4>CUOTAS SIN INTERES</h4>
+                <p>Ver promociones bancarias</p>
+            </div>
+        </article>
 
-        </section>
+        <article class="description">
+            <div class="icon-des"><i class="fas fa-exchange-alt"></i></div>
+            <div>
+                <h4>1° CAMBIO GRATIS</h4>
+                <p>Dentro de los 30 dias</p>
+            </div>
+        </article>
 
-    </footer>
+        <article class="description">
+            <div class="icon-des"><i class="fas fa-headset"></i></div>
+            <div>
+                <h4><i class="fas fa-phone-alt"></i> 11-xxxx-xxxx</h4>
+                <p>Lunes a viernes de 9:00 a 18:00 hs</p>
+            </div>
+        </article>
+
+    </section>
+
+    <section class="footer-Buttom">
+
+        <article class="red">
+            <h4>SIGUENOS EN:</h4>
+            <div class="icon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </article>
+
+        <article class="newsletter">
+            <h4>SUSCRIBETE A NUESTRO Newsleter:</h4>
+            <div class="box">
+                <i class="fas fa-newspaper">
+                    <input type="email" placeholder="Dirección de email">
+                </i>
+            </div>
+        </article>
+
+        <article class="info">
+            <h4>Todos los derechos reservados</h4>
+            <div>
+            <ul>
+                <li>Locales</li>
+                <li>Informacion legal</li>
+                <li>Mayoristas</li>
+                <li>Blablabla</li>
+            </ol>
+            </div>
+        </article>
+
+    </section>
+
+</footer>
     
 </body>
 </html>

@@ -4,7 +4,7 @@
   "description": "* width de 361 a 769 es para mobile.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",

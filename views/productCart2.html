@@ -27,16 +27,16 @@
             <div class="header-container">
 
                 <div class="logo-container">
-                    <img src="/images/Logo4.svg" alt="logo de LSKV" class="logo">
+                    <a href="/"><img src="/images/Logo4.svg" alt="logo de LSKV" class="logo"></a>
                 </div>
 
                 <div class = "list-container">
                     <ul class="list-home">
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="#">Locales</a></li>
-                        <li><a href="#">Promos y Cuotas</a></li>
-                        <li><a href="#">Empresa</a></li>
-                        <li><a href="#">Contacto</a></li>
+                           <li><a href="/productDetail">Productos</a></li>
+                         <li><a href="#">Locales</a></li>
+                         <li><a href="#">Promos y Cuotas</a></li>
+                         <li><a href="#">Empresa</a></li>
+                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </div>
                 
@@ -46,10 +46,12 @@
 
                 <div class="login-home">
                     <a href="#"><i class="fas fa-search"></i></a>
-                    <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                    <a href="/productCart"><i class="fas fa-shopping-bag"></i></a>
                     <a href="#"><i class="fas fa-user"></i></a>
                     <div class = "IngresarRegistrarse">
-                        <a href="#">Ingresar / Registrarse</a>
+                         <a href="/login">Ingresar</a>
+                          /
+                         <a href="/register">Registrarse</a>
                     </div>
                 </div>
 
@@ -70,10 +72,10 @@
         <h4 class="title"> Tu carrito de Compras </h4>
 
         <article class="paso">
-            <h2>1</h2>
+            <a href='/productCart'><h2>1</h2></a> 
             <h2 class="pasoDos">2</h2>
-            <h2>3</h2>
-            <h2>4</h2>
+            <a href='/productCart3'><h2>3</h2></a>
+            <a href='/productCart4'><h2>4</h2></a>
         </article> 
 
         <div class="cuerpoCarrito">
@@ -161,6 +163,7 @@
                     <p>En compras superiores de $5000</p>
                 </div>
             </article>
+
             <article class="description">
                 <div class="icon-des"><i class="fas fa-credit-card"></i></div>
                 <div>
@@ -168,6 +171,7 @@
                     <p>Ver promociones bancarias</p>
                 </div>
             </article>
+
             <article class="description">
                 <div class="icon-des"><i class="fas fa-exchange-alt"></i></div>
                 <div>
@@ -175,6 +179,7 @@
                     <p>Dentro de los 30 dias</p>
                 </div>
             </article>
+
             <article class="description">
                 <div class="icon-des"><i class="fas fa-headset"></i></div>
                 <div>
@@ -184,7 +189,9 @@
             </article>
 
         </section>
+
         <section class="footer-Buttom">
+
             <article class="red">
                 <h4>SIGUENOS EN:</h4>
                 <div class="icon">
@@ -194,13 +201,16 @@
                     <i class="fab fa-twitter"></i>
                 </div>
             </article>
+
             <article class="newsletter">
                 <h4>SUSCRIBETE A NUESTRO Newsleter:</h4>
                 <div class="box">
-                    <i class="fas fa-newspaper"></i>
-                    <div class="input">Dirección de email</div>
+                    <i class="fas fa-newspaper">
+                        <input type="email" placeholder="Dirección de email">
+                    </i>
                 </div>
             </article>
+
             <article class="info">
                 <h4>Todos los derechos reservados</h4>
                 <div>
