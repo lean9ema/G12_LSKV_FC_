@@ -103,6 +103,83 @@ header nav .header-container div a{
     color: #BA135D;
 }
 
+/** Home **/
+.banner{
+    width: 100%;
+}
+
+section div .img-banner{
+    width: 100%;
+}
+
+/* Populates */
+
+.populares{
+    width: 100%;
+    display: flex;
+    margin-top: 3%;
+}
+
+section .popular-now{
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section div .tittle-popu{
+    font-size: 3em;
+}
+
+section div .btn-popu button{
+    font-size: 20px;
+    padding: 10px 35px;
+    margin: 10px;
+}
+
+.products{
+    margin-top: 1%;
+}
+
+.description{
+    text-align: center;
+    color: #666;
+}
+
+/* Main */
+
+main section article{
+    background-color: #FFF;
+    
+}
+main section article div{
+    position: relative;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    padding: 40px;
+    margin: auto;
+}
+
+.products article{
+    margin: 10px;
+}
+
+.main-article{
+    border: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+.estilos-productos{
+    text-align: center;
+    font-size: 3em;
+    margin: 3% 0%;
+}
+
 /* FOOTER */
 
 footer{
@@ -869,6 +946,16 @@ main article.pago div img{
     .footer-Buttom .newsletter .box{
         width: 220px;
     }
+    /* Home */
+
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .products article{
+        width: 45%;
+    }
 
     /*REGISTER*/
 
@@ -1128,5 +1215,15 @@ main article.pago div img{
     main section.det-compra article.boton{
         width: 5%;
     }
+
+    /* Home */
+    .products article{
+        width: 20%;
+    }
+
+    .products article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
 
 }
