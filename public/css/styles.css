@@ -664,28 +664,15 @@ main section .paso h2{
 main section .paso a { 
     z-index: 0;
 }
+
+main section .paso .pasoTres,
+main section .paso .pasoCuatro,
+main section .paso .pasoDos,
 main section .paso .pasoUno{
     background-color: red;
     color: #fff;
 } 
 
-main section .paso .pasoDos{
-    background-color: red;
-    color: #fff;
-} 
-
- main section .paso .pasoTres{
-    background-color: red;
-    color: #fff;
-} 
-
- main section .paso .pasoCuatro{
-     background-color: red;
-     color: #fff;
- } 
-
- /*ProductCar 1*/
- 
  /*ProductCar 2*/
 
  main .cuerpoCarrito{
@@ -707,12 +694,6 @@ main section .paso .pasoDos{
  main section .cuerpoCarrito .login form button{
     width: 100%;
 }
-
-
- 
-
- 
-
 
 main section  .cuerpoCarrito .login form label {
     display: flex;
@@ -821,47 +802,57 @@ main div.bEnv button {
     padding: 2px;
 }
 
- /*ProductCar 4*/
+ /*ProductCar 1 y 4*/
+ main p.title-1-prodCart{ 
+    margin: 10px 20px 0px 20px;
+}
 
- main section.det-compra {
-     border: 2px solid black;
-     display: flex;
-     flex-wrap: wrap;
-     flex-direction: column;
-     align-items: center;
-     margin: 20px;
- }
-
- main section.det-compra:hover{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
- }
-
- main section.det-compra img{
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    padding: 4%;
-    border-radius: 30%;
- }
- main section.det-compra .imagen-prod{
-     display: flex;
-     flex-wrap: nowrap;
-     align-items: center;
-     flex-grow: 1;
- }
- main section.det-compra article.detalle-prod{
+main section.det-compra {
+    border: 2px solid black;
     display: flex;
-     flex-wrap: wrap;
-     flex-direction: column;
-     align-items: center;
- }
- main section.det-compra form label input{
-     display: flex;
-     flex-wrap: wrap;
-     flex-direction: column;
-     width: 20%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+}
 
- }
+main section.det-compra:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+article.detalle-prod{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+section.det-compra .detalle-prod img{ 
+    width: 130px;
+}
+article.detalle-prod div,
+article.detalle-prod img{ 
+    margin:0px 5px   ;
+} 
+
+section.det-compra article.detalle-prod form input { 
+    width: 60px;
+}
+section.det-compra article.precio {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+section.det-compra article.precio div { 
+    margin: 0px 10px  
+}
+section.det-compra article.boton{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+
 
 .total h5{
     margin: 20px;
@@ -876,9 +867,9 @@ main div.bEnv button {
      width: 200px;
  }
 
- main article.adress div:hover{
+main article.adress div:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100)
- }
+}
 
  main article.adress div.facturacion{
     width: 230px;
@@ -1015,22 +1006,6 @@ main article.pago div img{
     }
 
     /*carrito 4*/
-    main section.det-compra{
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    main section.det-compra article{
-        margin: 0 5px;
-        width: 30%;
-    }
-    main section.det-compra article.boton{
-        width: 10%;
-        text-align: left;
-    }
-    main section.det-compra .detalle-prod/*,.precio*/{
-        flex-grow: 0.5;
-    }
 
     main article.adress{
         display: flex;
@@ -1195,28 +1170,7 @@ main article.pago div img{
     main section div.form{
         flex-direction: row;
     }
-    /*Product car4*/
-    main section.det-compra article.detalle-prod{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    main section.det-compra article.detalle-prod div{
-        width: 30%;
-    }
-    main section.det-compra article.precio{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    main section.det-compra article.precio div{
-        width: 45%;
-    }
-    main section.det-compra article.boton{
-        width: 5%;
-    }
-
+    
     /* Home */
     .products article{
         width: 20%;
