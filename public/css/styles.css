@@ -135,7 +135,19 @@ section .popular-now{
 }
 
 section div .tittle-popu{
+    display: flex;
+    justify-content: center;
     font-size: 3em;
+    position: relative;
+}
+
+section div .tittle-popu:before {
+    width: 270px;
+    height: 1px;
+    bottom: 5px;
+    position: absolute;
+    content: "";
+    border-bottom: 3px solid #BA135D;
 }
 
 section div .btn-popu button{
@@ -178,9 +190,20 @@ main.home{
 }
 
 .estilos-productos{
-    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;    
     font-size: 3em;
     margin: 3% 0%;
+}
+
+.estilos-productos:before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    bottom: 5px; 
+    border-bottom: 3px solid #BA135D;
 }
 
 /* FOOTER */
@@ -659,9 +682,8 @@ main section h4.title:before{
     width: 200px;
     height: 1px;
     bottom: 2px;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #BA135D;
 }
-
 
 main section .paso{
     display: flex;
@@ -695,6 +717,7 @@ main section .paso h2{
 }
 
 main section .paso a { 
+    text-decoration: none;
     z-index: 0;
 }
 
@@ -702,7 +725,7 @@ main section .paso .pasoTres,
 main section .paso .pasoCuatro,
 main section .paso .pasoDos,
 main section .paso .pasoUno{
-    background-color: red;
+    background-color: #BA135D;
     color: #fff;
 } 
 
@@ -806,7 +829,7 @@ main section .cuerpoCarrito .register {
 main section div.form { 
     display: flex;
     flex-direction: column;
-    margin: 20px 0px;
+    margin: 20px 40px;
     justify-content: space-around;
 }
 
@@ -815,8 +838,16 @@ main section div.form form label{
     flex-direction: column;
     padding: 7px 0px ;
 }
+
 main section div.form form label select,
 main section div.form form label input { 
+    width: 90%;
+}
+
+main label div { 
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
     width: 90%;
 }
 
@@ -828,7 +859,7 @@ main div.bEnv  {
 main div.bEnv button { 
     font-size: 20px;
     color: white;
-    background-color: red;
+    background-color: #BA135D;
     border-radius: 10px;
     width: 100px;
     height: 50px;
@@ -885,7 +916,6 @@ section.det-compra article.boton{
     justify-content: center;
     margin: 5px;
 }
-
 
 .total h5{
     margin: 20px;
@@ -1209,6 +1239,9 @@ main article.pago div img{
         flex-direction: row;
     }
     
+    div.form form { 
+        width: 35%;
+    }
     /* Home */
     .products article{
         width: 20%;
